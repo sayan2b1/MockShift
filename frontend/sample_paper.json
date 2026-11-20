@@ -1,0 +1,168 @@
+{
+  "exam_title": "MockShift Benchmark Demo Examination (CAT / GATE Format)",
+  "exam_mode": "CAT",
+  "duration_minutes": 40,
+  "sections": [
+    "Verbal Ability & Reading Comprehension",
+    "Data Interpretation & Logical Reasoning",
+    "Quantitative Ability"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "Which one of the following best captures the author's central concern regarding the rapid transformation of modern media industries?\\n\\n'The transition from traditional editorial gatekeeping to algorithmic dissemination has created an environment where virality consistently triumphs over veracity. As media conglomerates prioritize engagement metrics, investigative journalism has increasingly been superseded by automated sentiment farming.'",
+      "options": {
+        "A": "Algorithmic curation has diminished the economic viability of independent media houses.",
+        "B": "Prioritizing virality and engagement over accuracy is undermining substantive investigative reporting.",
+        "C": "Artificial intelligence will inevitably replace human commentators within legacy broadcast television.",
+        "D": "Audiences systematically favor sensationalized short-form videos over long-form literary analyses."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 2,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "The four sentences given below, when properly sequenced, yield a coherent paragraph:\\n(1) And whenever systemic incentives fail, corporate leadership retreats into cosmetic brand reassurance.\\n(2) But another contributing factor is that product architectures prioritize velocity over structural resilience.\\n(3) Considerations regarding societal psychological health were fundamentally omitted from early platform design.\\n(4) That said, recent regulatory shifts in the European Union are creating modest precedent for algorithmic transparency.\\n\\nChoose the correct sequence:",
+      "options": {
+        "A": "3, 1, 2, 4",
+        "B": "3, 2, 1, 4",
+        "C": "2, 3, 1, 4",
+        "D": "1, 3, 2, 4"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 3,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "Five jumbled sentences are given below. Four form a coherent paragraph. Identify the odd sentence out and key in its number as your answer:\\n\\n(1) While municipal recycling rates have risen, the bulk of composite polymers still persists in marine food webs.\\n(2) Microplastic saturation in oceanic sediment constitutes one of the century's most intractable ecological crises.\\n(3) Supranational conventions have begun imposing binding bans on non-essential virgin polymers.\\n(4) Single-use packaging polymers, engineered for durability, take up to 400 years to photochemically degrade.\\n(5) Venture funding for synthetic biology startups focused on cultivated meat reached record heights last quarter.",
+      "options": null,
+      "correct_answer": "5",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 4,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "Five security software researchers—Ananya, Bashir, Cathy, Dinesh, and Esha—participated in a two-stage bug-hunting tournament on Server-Alpha and Server-Beta. The bug counts on Server-Alpha form an AP with common difference $15$: $\\{20, 35, 50, 65, 80\\}$. On Server-Beta, the counts form an AP with common difference $20$: $\\{30, 50, 70, 90, 110\\}$. Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh scored the median count on both servers. What is the maximum possible difference between the bugs found by a single researcher across the two servers?",
+      "options": {
+        "A": "75",
+        "B": "90",
+        "C": "60",
+        "D": "80"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 5,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "A university organized a student activity fair where students could enroll in four clubs: Photography ($PH$), Robotics ($RB$), Drama ($DR$), and Entrepreneurship ($EN$). Exactly 80 students enrolled in no club. Among students enrolled in clubs, the number enrolled in all four clubs is $x$. The number of students enrolled in exactly three clubs equals $4x$, which also equals the 80 students who enrolled in no club. How many students were enrolled in all four clubs?",
+      "options": null,
+      "correct_answer": "20",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 6,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "Five student mentors—Aman, Bhaskar, Charan, Deepak, and Ehsaan—are seated in chairs 1 to 5 from left to right. Each distributes QA, VA, and DI booklets. The base cost is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI. Total expenses are: Aman (Rs. 300), Bhaskar (Rs. 360), Charan (Rs. 550), Deepak (Rs. 620), Ehsaan (Rs. 600). Charan sits to the immediate left of Bhaskar (who distributed 5 QA and 2 VA booklets). Bhaskar and the mentor to his immediate right distributed 11 VA booklets in total. Who is seated in Chair 4?",
+      "options": {
+        "A": "Ehsaan",
+        "B": "Bhaskar",
+        "C": "Deepak",
+        "D": "Aman"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 7,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "Four employees, A, B, C, and D, received integer performance scores $a, b, c, d$. Each employee's revised score is their original score plus the arithmetic mean of the other three. The revised scores are $56, 74, 92,$ and $114$. What is the average of the original performance scores of the four employees? (Enter the exact integer)",
+      "options": null,
+      "correct_answer": "42",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 8,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Find the maximum real value of $M$ such that the inequality $$3^x + \\frac{576}{3^x} - M \\ge 0$$ holds for all real numbers $x$.",
+      "options": {
+        "A": "24",
+        "B": "36",
+        "C": "42",
+        "D": "48"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 9,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Consider the quadratic equation $(k + 1)x^2 - 2(k + 1)x + k = 0$, where $k$ is a real parameter with $k \\ne -1$. For what range of values of $k$ does the equation have both roots strictly greater than $0$ and strictly less than $2$?",
+      "options": {
+        "A": "(-1, 0)",
+        "B": "[0, \\infty)",
+        "C": "(-1, \\infty)",
+        "D": "(0, \\infty)"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 10,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "Let $y = |x + 2| + |x - 4| + |x - 8|$, where $x$ is a real number. What is the minimum real value of $y$?",
+      "options": null,
+      "correct_answer": "10",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 11,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Let $g(n)$ be a function defined for all integers $n \\ge 0$. If $g(1) = 1$ and $g$ satisfies $$g(a - b) + g(a + b) = \\frac{g(2a) + g(2b)}{2}$$ for all integers $a \\ge b \\ge 0$, then $g(2026)$ is equal to:",
+      "options": {
+        "A": "2026^2",
+        "B": "2026",
+        "C": "2027^2",
+        "D": "2025 \\times 2026"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 12,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "In trapezium $ABCD$, side $AB$ is parallel to $DC$, $AB = 12\\text{ cm}$, $DC = 20\\text{ cm}$, $AD = 34\\text{ cm}$, and $\\angle DAB = 90^\\circ$. Point $E$ lies on segment $AD$ such that $BE \\perp EC$. What is the maximum possible area (in sq. cm) of $\\triangle BEC$?",
+      "options": null,
+      "correct_answer": "300",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    }
+  ]
+}
+

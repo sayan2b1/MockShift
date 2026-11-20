@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MockShift AI | BYOP Computer-Based Test (CBT) Simulator</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- KaTeX for authentic LaTeX Math Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Chart.js for Behavioral Quadrant Scatter Plot -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Google Identity Services (GIS) for Google Sign-In & Drive OAuth Token Client -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Resume Session Banner (Crash Recovery) -->
+  <div id="resume-session-banner" class="resume-banner" style="display: none;">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <i class="fas fa-history" style="font-size: 1.2rem; color: #a5b4fc;"></i>
+      <div>
+        <strong>Active Exam Session Detected!</strong> You have an unfinished test stored in your browser memory.
+      </div>
+    </div>
+    <div style="display: flex; gap: 0.5rem;">
+      <button class="btn btn-primary" id="resume-session-btn" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">Resume Previous Exam</button>
+      <button class="btn btn-secondary" id="discard-session-btn" style="padding: 0.35rem 0.85rem; font-size: 0.82rem;">Discard</button>
+    </div>
+  </div>
+
+  <!-- Main App Header -->
+  <header class="app-header">
+    <div class="brand-title">
+      <i class="fas fa-graduation-cap" style="color: var(--accent);"></i>
+      <span>MockShift</span>
+      <span class="brand-badge">BYOP CBT AI</span>
+    </div>
+
+    <!-- Active CBT Exam Info & Live Countdown (Visible during CBT) -->
+    <div class="header-cbt-info" id="header-cbt-info" style="display: none;">
+      <span class="header-cbt-title" id="header-cbt-exam-title">Exam Title</span>
+      <div class="header-cbt-timer-wrap" id="header-cbt-timer-wrap" title="Total Time Remaining">
+        <i class="fas fa-clock"></i>
+        <span class="header-cbt-timer" id="header-cbt-timer">00:00:00</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- Header Submit Test Button (Visible during CBT) -->
+      <button class="btn btn-danger" id="header-submit-btn" style="display: none;" title="Finish and Submit Exam">
+        <i class="fas fa-paper-plane"></i>
+        <span>Submit Test</span>
+      </button>
+
+      <!-- BYOK Gemini API Key Pill -->
+      <button class="key-pill fallback" id="header-key-badge" title="Manage your personal Gemini API Key">
+        <i class="fas fa-key"></i>
+        <span>API Key</span>
+      </button>
+
+      <!-- Past Records Drawer Button -->
+      <button class="btn btn-secondary" id="header-records-btn" title="View Past Exam Attempts">
+        <i class="fas fa-history"></i>
+        <span>Records</span>
+        <span class="header-badge-count" id="past-records-count">0</span>
+      </button>
+
+      <!-- User Account / Google Sign-In Button -->
+      <button class="user-pill-btn" id="header-user-btn" title="Account & Google Sign-In">
+        <span id="header-user-avatar" class="user-avatar-span"><i class="fas fa-user-circle"></i></span>
+        <span id="header-user-name" class="user-name-span">Guest</span>
+      </button>
+
+      <!-- Fullscreen Toggle Button -->
+      <button class="btn btn-secondary" id="fullscreen-toggle-btn" title="Toggle Fullscreen">
+        <i class="fas fa-expand"></i>
+        <span class="btn-text">Fullscreen</span>
+      </button>
+
+      <!-- Virtual Calculator Toggle Button (shown for GATE & CAT) -->
+      <button class="btn btn-secondary" id="header-calc-btn" style="display: none;" title="Toggle Virtual Calculator">
+        <i class="fas fa-calculator" style="color: var(--accent);"></i>
+        <span>Calculator</span>
+      </button>
+
+      <!-- Mobile Palette Toggle (shown on small screens during test) -->
+      <button class="btn btn-secondary" id="mobile-palette-toggle" style="display: none;" title="Toggle Palette">
+        <i class="fas fa-th"></i>
+        <span>Palette</span>
+      </button>
+
+      <!-- AMOLED Dark / Light Mode Toggle -->
+      <button class="btn btn-icon" id="theme-toggle-btn" title="Toggle AMOLED Dark / Light Mode">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- =========================================================================
+       VIEW 1: UPLOAD & SETUP SCREEN
+       ========================================================================= -->
+  <main class="view-container active" id="upload-screen">
+    <div class="upload-hero">
+      <div class="hero-header">
+        <h1>Bring Your Own Paper (BYOP)</h1>
+        <p>Transform any competitive exam PDF into an authentic, timed Indian CBT interface with token-optimized AI analytics.</p>
+      </div>
+
+      <!-- Comprehensive Exam Selector (Categorized & Responsive Grid) -->
+      <div class="mode-selector-wrap">
+        <!-- Category Filter Tabs -->
+        <div class="mode-category-tabs" id="mode-category-tabs">
+          <button class="mode-category-btn active" data-filter="all">
+            <i class="fas fa-layer-group"></i> All Exams (11)
+          </button>
+          <button class="mode-category-btn" data-filter="eng">
+            <i class="fas fa-atom"></i> Engineering & Medical
+          </button>
+          <button class="mode-category-btn" data-filter="govt">
+            <i class="fas fa-landmark"></i> Civil Services & Govt
+          </button>
+          <button class="mode-category-btn" data-filter="mgmt">
+            <i class="fas fa-chart-line"></i> Management & Banking
+          </button>
+          <button class="mode-category-btn" data-filter="uni">
+            <i class="fas fa-graduation-cap"></i> University & Custom
+          </button>
+        </div>
+
+        <!-- Mode Grid Pills -->
+        <div class="mode-grid" id="exam-mode-grid">
+          <!-- 1. CAT -->
+          <div class="mode-pill active" data-mode="CAT" data-category="mgmt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-chart-line"></i> CAT</div>
+              <span class="mode-badge">IIMs</span>
+            </div>
+            <span class="subtext">120m • +3/-1 • Basic Calc</span>
+          </div>
+
+          <!-- 2. GATE -->
+          <div class="mode-pill" data-mode="GATE" data-category="eng">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-cogs"></i> GATE</div>
+              <span class="mode-badge">IITs / IISc</span>
+            </div>
+            <span class="subtext">180m • +1/+2 • Scientific Calc</span>
+          </div>
+
+          <!-- 3. JEE -->
+          <div class="mode-pill" data-mode="JEE" data-category="eng">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-atom"></i> JEE Main / Adv</div>
+              <span class="mode-badge">IITs / NITs</span>
+            </div>
+            <span class="subtext">180m • +4/-1 • No Calc</span>
+          </div>
+
+          <!-- 4. NEET UG -->
+          <div class="mode-pill" data-mode="NEET" data-category="eng">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-stethoscope"></i> NEET UG</div>
+              <span class="mode-badge">Medical</span>
+            </div>
+            <span class="subtext">200m • +4/-1 • No Calc</span>
+          </div>
+
+          <!-- 5. UPSC CSE GS-1 -->
+          <div class="mode-pill" data-mode="UPSC_GS" data-category="govt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-landmark"></i> UPSC CSE (GS-1)</div>
+              <span class="mode-badge">Civil Services</span>
+            </div>
+            <span class="subtext">120m • +2/-0.66 • No Calc</span>
+          </div>
+
+          <!-- 6. UPSC CSAT -->
+          <div class="mode-pill" data-mode="UPSC_CSAT" data-category="govt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-brain"></i> UPSC CSAT</div>
+              <span class="mode-badge">Paper 2</span>
+            </div>
+            <span class="subtext">120m • +2.5/-0.83 • No Calc</span>
+          </div>
+
+          <!-- 7. SSC CGL -->
+          <div class="mode-pill" data-mode="SSC" data-category="govt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-balance-scale"></i> SSC CGL</div>
+              <span class="mode-badge">Tier 1</span>
+            </div>
+            <span class="subtext">60m • +2/-0.5 • No Calc</span>
+          </div>
+
+          <!-- 8. RRB NTPC / Railways -->
+          <div class="mode-pill" data-mode="RAILWAYS" data-category="govt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-train"></i> Railways (RRB)</div>
+              <span class="mode-badge">NTPC</span>
+            </div>
+            <span class="subtext">90m • +1/-0.33 • No Calc</span>
+          </div>
+
+          <!-- 9. Banking PO -->
+          <div class="mode-pill" data-mode="BANKING" data-category="mgmt">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-university"></i> Banking PO</div>
+              <span class="mode-badge">IBPS / SBI</span>
+            </div>
+            <span class="subtext">60m • +1/-0.25 • No Calc</span>
+          </div>
+
+          <!-- 10. CUET UG -->
+          <div class="mode-pill" data-mode="CUET" data-category="uni">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-graduation-cap"></i> CUET UG</div>
+              <span class="mode-badge">Central Univ</span>
+            </div>
+            <span class="subtext">60m • +5/-1 • No Calc</span>
+          </div>
+
+          <!-- 11. Custom -->
+          <div class="mode-pill" data-mode="CUSTOM" data-category="uni">
+            <div class="mode-top">
+              <div class="mode-title"><i class="fas fa-sliders-h"></i> Custom Exam</div>
+              <span class="mode-badge">BYOP Mode</span>
+            </div>
+            <span class="subtext">Editable Duration & Marking</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upload Card -->
+      <div class="upload-card">
+
+        <!-- Upload Source Tabs: Local File vs Google Drive -->
+        <div class="upload-source-tabs">
+          <button class="upload-tab-btn active" id="upload-tab-local">
+            <i class="fas fa-file-upload"></i> Local File Upload
+          </button>
+          <button class="upload-tab-btn" id="upload-tab-drive">
+            <i class="fab fa-google-drive"></i> Google Drive Upload
+          </button>
+        </div>
+
+        <!-- 1. LOCAL FILE UPLOAD SECTION -->
+        <div id="local-upload-section">
+          <!-- Dual Dropzones -->
+          <div class="dropzone-grid">
+            <div class="dropzone" id="q-dropzone">
+              <i class="fas fa-file-pdf"></i>
+              <h3>Question Paper PDF</h3>
+              <p>Drag & drop or click to upload PDF</p>
+              <input type="file" id="q-file-input" accept="application/pdf" style="display: none;">
+            </div>
+
+            <div class="dropzone" id="ak-dropzone">
+              <i class="fas fa-key"></i>
+              <h3>Answer Key PDF (Optional)</h3>
+              <p>If separate, pass to auto-map answers</p>
+              <input type="file" id="ak-file-input" accept="application/pdf" style="display: none;">
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. GOOGLE DRIVE UPLOAD SECTION -->
+        <div id="drive-upload-section" style="display: none;">
+          <div class="drive-upload-box">
+            <div class="dropzone" id="drive-dropzone" style="min-height: 180px;">
+              <i class="fab fa-google-drive" style="color: #4285f4; font-size: 2.8rem;"></i>
+              <h3>Select PDF to Upload into Google Drive</h3>
+              <p>Uploaded directly to your <strong>MockShift Papers</strong> folder in Google Drive</p>
+              <input type="file" id="drive-file-input" accept="application/pdf" style="display: none;">
+            </div>
+
+            <!-- Drive Status Banner -->
+            <div id="drive-upload-status" class="drive-status-banner" style="display: none;"></div>
+
+            <div style="margin-top: 1rem; text-align: right;">
+              <button class="btn btn-primary" id="drive-upload-and-parse-btn">
+                <i class="fab fa-google-drive"></i>
+                <span>Upload to Drive & Parse Exam</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Mode Duration & Marking Bar -->
+        <div class="custom-settings-bar" id="custom-settings-bar" style="display: none;">
+          <div class="setting-item">
+            <label for="custom-duration-input">Duration (mins):</label>
+            <input type="number" id="custom-duration-input" value="180" min="5" max="360">
+          </div>
+          <div class="setting-item">
+            <label for="custom-pos-marks">Positive Marks:</label>
+            <input type="number" id="custom-pos-marks" value="3" step="0.5">
+          </div>
+          <div class="setting-item">
+            <label for="custom-neg-marks">Negative Marks:</label>
+            <input type="number" id="custom-neg-marks" value="1" step="0.25">
+          </div>
+        </div>
+
+        <!-- Exam Lockdown Toggle -->
+        <div style="margin: 1.25rem 0; display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1rem; background: var(--bg-surface); border-radius: var(--radius-md);">
+          <div>
+            <strong style="font-size: 0.92rem; display: block;">Exam-Hall Lockdown Mode</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Enforces fullscreen, blocks copy/paste, and records focus breaks.</span>
+          </div>
+          <label class="switch-label">
+            <input type="checkbox" id="lockdown-mode-toggle" class="switch-input" checked>
+            <span class="switch-slider"></span>
+          </label>
+        </div>
+
+        <!-- Actions -->
+        <div class="upload-actions">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary" id="load-sample-btn">
+              <i class="fas fa-magic" style="color: var(--accent);"></i>
+              <span>12Q Benchmark Demo (0 API Calls)</span>
+            </button>
+            <button class="btn btn-secondary" id="load-full-mock-btn">
+              <i class="fas fa-book" style="color: #38bdf8;"></i>
+              <span>Full 68Q CAT Mock Paper (0 API Calls)</span>
+            </button>
+            <button class="btn btn-secondary" id="import-shared-paper-btn" title="Import classmate's exported .json paper with 0 API calls">
+              <i class="fas fa-file-import" style="color: #a78bfa;"></i>
+              <span>Import Shared Paper (.json)</span>
+            </button>
+            <input type="file" id="shared-paper-file-input" accept=".json,application/json" style="display: none;">
+          </div>
+
+          <button class="btn btn-primary" id="parse-pdf-btn">
+            <i class="fas fa-bolt"></i>
+            <span>Upload & Parse with Gemini</span>
+          </button>
+        </div>
+
+        <!-- Parsing Progress Overlay -->
+        <div class="progress-container" id="upload-progress-container">
+          <div class="progress-header">
+            <div class="progress-spinner"></div>
+            <span id="upload-progress-text" style="font-weight: 600; font-size: 0.9rem; color: var(--accent);">Analyzing your question paper and formatting questions...</span>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       VIEW 2: HUMAN-IN-THE-LOOP QUICK EDITOR (PRE-EXAM REVIEW)
+       ========================================================================= -->
+  <main class="view-container" id="editor-screen">
+    <div class="editor-container">
+      <div class="editor-header-card">
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">Pre-Exam Review & Fix</h2>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Review extracted questions, verify LaTeX rendering, and adjust keys before starting the timer.</p>
+        </div>
+        <div class="editor-meta">
+          <div class="editor-stat">
+            <span class="val" id="editor-total-questions">0</span>
+            <span class="lbl">Questions</span>
+          </div>
+          <div class="editor-stat">
+            <span class="val" id="editor-sections-count">0</span>
+            <span class="lbl">Sections</span>
+          </div>
+          <div class="editor-stat">
+            <span class="val" id="editor-duration">180m</span>
+            <span class="lbl">Duration</span>
+          </div>
+          <button class="btn btn-secondary" id="editor-add-q-btn" style="padding: 0.75rem 1rem;">
+            <i class="fas fa-plus"></i> Add Question
+          </button>
+          <button class="btn btn-secondary" id="editor-export-paper-btn" style="padding: 0.75rem 1rem;" title="Download clean KaTeX-ready JSON paper">
+            <i class="fas fa-file-download"></i> Export Paper (.json)
+          </button>
+          <button class="btn btn-primary" id="editor-start-exam-btn" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+            <i class="fas fa-play"></i> Start Exam
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">Exam Title:</label>
+        <input type="text" id="editor-exam-title" class="edit-input" style="font-size: 1.1rem; font-weight: 700;">
+      </div>
+
+      <!-- Question Cards List -->
+      <div class="questions-edit-list" id="questions-edit-list"></div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       VIEW 3: AUTHENTIC CBT EXAM INTERFACE
+       ========================================================================= -->
+  <main class="view-container" id="cbt-screen">
+    <div class="cbt-layout">
+      <!-- Main Content Area -->
+      <div class="cbt-main">
+        <!-- Section Tabs -->
+        <div class="cbt-section-bar" id="cbt-section-tabs"></div>
+
+        <!-- Question Card -->
+        <div class="cbt-question-card" id="cbt-question-card">
+          <div class="cbt-q-header">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div class="cbt-q-title" id="cbt-question-title">Question 1</div>
+              <span class="badge-qtype badge-mcq" id="cbt-question-type-badge">MCQ</span>
+            </div>
+            <div class="cbt-q-marks" id="cbt-question-marks">+3 / -1</div>
+          </div>
+
+          <div class="cbt-q-text" id="cbt-question-text">
+            Loading question text...
+          </div>
+
+          <!-- Question Diagram / Figure (Extracted from PDF via PyMuPDF) -->
+          <div class="cbt-q-image-wrap" id="cbt-question-image-wrap" style="display: none;">
+            <div class="cbt-q-image-header">
+              <span><i class="fas fa-image"></i> Question Diagram</span>
+              <button class="cbt-q-image-zoom-btn" id="cbt-image-zoom-btn" type="button" title="View full size">
+                <i class="fas fa-search-plus"></i> Zoom Diagram
+              </button>
+            </div>
+            <img id="cbt-question-image" class="cbt-q-image" src="" alt="Question Diagram" />
+          </div>
+
+          <!-- MCQ / MSQ Options list -->
+          <div class="cbt-options-list" id="cbt-options-container"></div>
+
+          <!-- NAT / TITA Question Input & Virtual Numpad -->
+          <div class="nat-container" id="cbt-nat-container" style="display: none;">
+            <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">
+              Type your numeric answer using the on-screen keypad:
+            </label>
+            <input type="text" id="nat-answer-input" class="nat-input-box" readonly placeholder="0.0">
+
+            <div class="numpad-grid" id="nat-numpad">
+              <button class="numpad-btn" data-val="7">7</button>
+              <button class="numpad-btn" data-val="8">8</button>
+              <button class="numpad-btn" data-val="9">9</button>
+              <button class="numpad-btn" data-val="4">4</button>
+              <button class="numpad-btn" data-val="5">5</button>
+              <button class="numpad-btn" data-val="6">6</button>
+              <button class="numpad-btn" data-val="1">1</button>
+              <button class="numpad-btn" data-val="2">2</button>
+              <button class="numpad-btn" data-val="3">3</button>
+              <button class="numpad-btn" data-val="0">0</button>
+              <button class="numpad-btn" data-val=".">.</button>
+              <button class="numpad-btn" data-val="-">-</button>
+              <button class="numpad-btn btn-action" data-action="backspace">⌫ Backspace</button>
+              <button class="numpad-btn btn-action btn-clear" data-action="clear" style="grid-column: span 2;">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Action Bar -->
+        <div class="cbt-footer-bar">
+          <button class="btn btn-secondary" id="cbt-prev-btn" title="Previous Question (Keyboard shortcut: ←)">
+            <i class="fas fa-arrow-left"></i> Previous <span class="kbd-hint">(←)</span>
+          </button>
+          
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary" id="cbt-clear-btn" style="color: var(--danger); border-color: rgba(239, 68, 68, 0.4);" title="Clear selected answer">
+              <i class="fas fa-eraser"></i> Clear Response
+            </button>
+            <button class="btn btn-secondary" id="cbt-mark-review-btn" style="color: #a78bfa; border-color: rgba(167, 139, 250, 0.4);" title="Mark for Review & Next (Keyboard shortcut: M)">
+              <i class="fas fa-bookmark"></i> Mark for Review & Next <span class="kbd-hint">(M)</span>
+            </button>
+          </div>
+
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-primary" id="cbt-next-btn" title="Save & Next (Keyboard shortcut: Enter or →)">
+              Save & Next <span class="kbd-hint">(Enter / →)</span> <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn btn-danger" id="cbt-submit-test-btn">
+              <i class="fas fa-paper-plane"></i> Submit Test
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CBT Sidebar (5-State Question Palette) -->
+      <aside class="cbt-sidebar" id="cbt-sidebar">
+        <!-- Mobile Sidebar Close Button -->
+        <div style="display: none; justify-content: space-between; align-items: center; padding: 0.5rem 1rem; border-bottom: 1px solid var(--border);" id="sidebar-mobile-header">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent);">Question Navigator</span>
+          <button class="calc-close-btn" id="sidebar-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+
+        <!-- Timers -->
+        <div class="cbt-timer-box">
+          <div class="timer-label">Total Time Remaining</div>
+          <div class="timer-digits" id="cbt-overall-timer">00:00:00</div>
+          <div style="font-size: 0.8rem; margin-top: 0.35rem; opacity: 0.85;">
+            Section Time: <span id="cbt-section-timer">00:00</span>
+          </div>
+        </div>
+
+        <!-- 5-State Legend -->
+        <div class="palette-legend">
+          <div class="legend-item">
+            <span class="legend-badge not-visited" id="legend-cnt-not-visited">0</span>
+            <span>Not Visited</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge not-answered" id="legend-cnt-not-answered">0</span>
+            <span>Not Answered</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge answered" id="legend-cnt-answered">0</span>
+            <span>Answered</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge marked-review" id="legend-cnt-marked-review">0</span>
+            <span>Marked for Review</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-badge answered-marked-review" id="legend-cnt-ans-marked-review">0</span>
+            <span>Ans & Marked (Evaluated)</span>
+          </div>
+        </div>
+
+        <!-- Question Palette Grid -->
+        <div class="palette-grid-container">
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase;">
+            Question Palette
+          </div>
+          <div class="palette-grid" id="cbt-palette-grid"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       VIEW 4: POST-TEST INTELLIGENCE DASHBOARD (ANALYTICS)
+       ========================================================================= -->
+  <main class="view-container" id="analytics-screen">
+    <!-- Rendered dynamically by MockShiftAnalytics -->
+  </main>
+
+  <!-- =========================================================================
+       VIRTUAL CALCULATOR (TCS iON GATE Scientific & CAT Basic)
+       ========================================================================= -->
+  <div class="calc-modal" id="calc-modal">
+    <div class="calc-header" id="calc-header">
+      <span id="calc-title">GATE TCS iON Scientific Calculator</span>
+      <button class="calc-close-btn" id="calc-close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="calc-body">
+      <div class="calc-display-wrap">
+        <div class="calc-expr" id="calc-display-expr"></div>
+        <div class="calc-val" id="calc-display-val">0</div>
+      </div>
+      <div class="calc-mode-bar">
+        <span id="calc-angle-mode">Mode: DEG</span>
+        <span style="font-size: 0.7rem; color: var(--text-muted);"><i class="fas fa-mouse"></i> Mouse-Only Mode</span>
+      </div>
+      <div class="calc-grid" id="calc-buttons-grid"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MISTAKE AUTOPSY & FOCUS BREAK MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="autopsy-modal-backdrop">
+    <div class="autopsy-modal-content">
+      <div class="autopsy-header">
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent); display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fas fa-microscope"></i> <span id="autopsy-modal-title">AI Mistake Autopsy</span>
+        </h3>
+        <button class="calc-close-btn" id="autopsy-modal-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="autopsy-body" id="autopsy-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       API KEY & ACCOUNT MODAL (UNIFIED BYOK & GOOGLE SIGN-IN)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="account-key-modal-backdrop">
+    <div class="autopsy-modal-content" style="max-width: 540px;">
+      <div class="autopsy-header" style="padding-bottom: 0.75rem;">
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent); display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fas fa-user-shield"></i> <span id="account-key-modal-title">API Key & Account Settings</span>
+        </h3>
+        <button class="calc-close-btn" id="account-key-modal-close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <!-- Navigation Tabs inside Modal -->
+      <div class="modal-tabs-bar">
+        <button class="modal-tab-btn active" id="modal-tab-key">
+          <i class="fas fa-key"></i> Gemini API Key (BYOK)
+        </button>
+        <button class="modal-tab-btn" id="modal-tab-account">
+          <i class="fab fa-google"></i> Student Account
+        </button>
+      </div>
+
+      <div class="autopsy-body" style="padding: 1.25rem 1.5rem;">
+        
+        <!-- TAB 1: GEMINI API KEY (BYOK) -->
+        <div id="modal-tab-content-key">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+            Enter your personal <strong>Gemini API Key</strong> to power question paper extraction, mistake autopsies, and weakness drills. Your key is kept private on this device and is <strong>never stored on our servers</strong>.
+          </p>
+
+          <!-- Current Key Status -->
+          <div id="byok-status-desc" style="margin-bottom: 1rem; padding: 0.75rem 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); font-size: 0.85rem;"></div>
+
+          <!-- Input Field with Show/Hide -->
+          <div style="position: relative; margin-bottom: 1rem;">
+            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">
+              Gemini API Key:
+            </label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="password" id="byok-key-input" class="edit-input" placeholder="Paste your Gemini API key (e.g. AQ... or AIza...)" style="flex: 1; font-family: monospace;">
+              <button class="btn btn-secondary btn-icon" id="toggle-key-visibility-btn" title="Toggle Visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div style="display: flex; gap: 0.5rem; justify-content: flex-end; margin-bottom: 1rem;">
+            <button class="btn btn-secondary btn-sm" id="test-byok-key-btn">
+              <i class="fas fa-vial"></i> Test Key
+            </button>
+            <button class="btn btn-secondary btn-sm" id="clear-byok-key-btn" style="color: var(--danger);">
+              <i class="fas fa-trash-alt"></i> Clear
+            </button>
+            <button class="btn btn-primary btn-sm" id="save-byok-key-btn">
+              <i class="fas fa-save"></i> Save Key
+            </button>
+          </div>
+
+          <!-- Test Feedback Area -->
+          <div id="key-test-status" style="font-size: 0.85rem; margin-bottom: 1rem; min-height: 24px;"></div>
+
+          <!-- Quota Note & Link -->
+          <div class="note-box" style="font-size: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-elevated); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+            <i class="fas fa-info-circle" style="color: var(--accent);"></i>
+            <span><strong>Need a free API Key?</strong> You can get a free personal key from <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); text-decoration: underline;">Google AI Studio</a>. (Google Sign-In saves your student history, while an API key powers AI question solving).</span>
+          </div>
+        </div>
+
+        <!-- TAB 2: STUDENT ACCOUNT (GOOGLE SIGN-IN) -->
+        <div id="modal-tab-content-account" style="display: none;">
+          <!-- User Info Card -->
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-md);">
+            <div id="modal-user-avatar" style="width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; background: var(--bg-elevated);">
+              <i class="fas fa-user-circle" style="font-size: 3rem; color: var(--text-muted);"></i>
+            </div>
+            <div>
+              <div id="modal-user-name" style="font-weight: 700; font-size: 1.1rem; color: var(--text-primary);">Guest Student</div>
+              <div id="modal-user-email" style="font-size: 0.8rem; color: var(--text-muted);">Guest Mode • Test history saved on this device</div>
+            </div>
+          </div>
+
+          <!-- Subtle Cross-Device Sync Status Bar -->
+          <div class="sync-status-bar modal-sync-bar" id="modal-sync-bar">
+            <div class="sync-status-pill local" id="modal-sync-status">
+              <i class="fas fa-hdd" style="color: var(--text-muted);"></i>
+              <span>💾 Saved locally on this device</span>
+            </div>
+            <button class="btn btn-secondary btn-sm sync-now-btn" id="modal-sync-now-btn" style="display: none;" title="Sync test history across devices">
+              <i class="fas fa-sync-alt"></i> Sync Now
+            </button>
+          </div>
+
+          <!-- Google Sign In Section -->
+          <div id="modal-signin-section">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Sign in with your Google account to keep your test attempts, scores, and performance analytics organized under your student profile.
+            </p>
+            <div id="google-signin-btn-container" style="display: flex; justify-content: center; margin-bottom: 0.75rem;"></div>
+            <div id="gsi-config-note"></div>
+          </div>
+
+          <!-- Signed In Profile Actions Section -->
+          <div id="modal-profile-section" style="display: none; text-align: right; margin-top: 1rem;">
+            <button class="btn btn-secondary" id="modal-signout-btn" style="color: var(--danger); border-color: rgba(239, 68, 68, 0.4);">
+              <i class="fas fa-sign-out-alt"></i> Sign Out to Guest Mode
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       PAST RECORDS DRAWER (SLIDE-OUT HISTORY)
+       ========================================================================= -->
+  <div class="past-records-drawer" id="past-records-drawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <i class="fas fa-history" style="color: var(--accent);"></i>
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary);">Past Test Records</h3>
+      </div>
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <button class="btn btn-secondary btn-sm" id="clear-history-btn" title="Clear Account History" style="color: var(--danger); padding: 0.35rem 0.65rem;">
+          <i class="fas fa-trash-alt"></i> Clear
+        </button>
+        <button class="calc-close-btn" id="past-records-close"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <!-- Subtle Cross-Device Sync Status Bar -->
+    <div class="sync-status-bar" id="drawer-sync-bar">
+      <div class="sync-status-pill local" id="drawer-sync-status">
+        <i class="fas fa-hdd" style="color: var(--text-muted);"></i>
+        <span>💾 Saved locally on this device</span>
+      </div>
+      <button class="btn btn-secondary btn-sm sync-now-btn" id="drawer-sync-now-btn" style="display: none;" title="Sync test history across devices">
+        <i class="fas fa-sync-alt"></i> Sync Now
+      </button>
+    </div>
+    <div class="drawer-body" id="past-records-list">
+      <!-- Rendered dynamically by MockShiftAuth -->
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       DIAGRAM ZOOM / LIGHTBOX MODAL
+       ========================================================================= -->
+  <div class="image-zoom-modal" id="image-zoom-modal" style="display: none;">
+    <button class="image-zoom-close" id="image-zoom-close" title="Close"><i class="fas fa-times"></i></button>
+    <img id="image-zoom-img" src="" alt="Zoomed Diagram" />
+  </div>
+
+  <!-- Application Scripts in Dependency Order -->
+  <script src="config.js"></script>
+  <script src="drive_upload.js"></script>
+  <script src="auth_history.js"></script>
+  <script src="calculator.js"></script>
+  <script src="analytics.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

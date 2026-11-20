@@ -1,0 +1,170 @@
+{
+  "exam_title": "MockShift Benchmark Demo Examination (CAT / GATE Format)",
+  "exam_mode": "CAT",
+  "duration_minutes": 40,
+  "sections": [
+    "Verbal Ability & Reading Comprehension",
+    "Data Interpretation & Logical Reasoning",
+    "Quantitative Ability"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "Which one of the following best captures the author's central concern regarding the rapid transformation of modern media industries?\\n\\n'The transition from traditional editorial gatekeeping to algorithmic dissemination has created an environment where virality consistently triumphs over veracity. As media conglomerates prioritize engagement metrics, investigative journalism has increasingly been superseded by automated sentiment farming.'",
+      "options": {
+        "A": "Algorithmic curation has diminished the economic viability of independent media houses.",
+        "B": "Prioritizing virality and engagement over accuracy is undermining substantive investigative reporting.",
+        "C": "Artificial intelligence will inevitably replace human commentators within legacy broadcast television.",
+        "D": "Audiences systematically favor sensationalized short-form videos over long-form literary analyses."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 2,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "The four sentences given below, when properly sequenced, yield a coherent paragraph:\\n(1) And whenever systemic incentives fail, corporate leadership retreats into cosmetic brand reassurance.\\n(2) But another contributing factor is that product architectures prioritize velocity over structural resilience.\\n(3) Considerations regarding societal psychological health were fundamentally omitted from early platform design.\\n(4) That said, recent regulatory shifts in the European Union are creating modest precedent for algorithmic transparency.\\n\\nChoose the correct sequence:",
+      "options": {
+        "A": "3, 1, 2, 4",
+        "B": "3, 2, 1, 4",
+        "C": "2, 3, 1, 4",
+        "D": "1, 3, 2, 4"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 3,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "Five jumbled sentences are given below. Four form a coherent paragraph. Identify the odd sentence out and key in its number as your answer:\\n\\n(1) While municipal recycling rates have risen, the bulk of composite polymers still persists in marine food webs.\\n(2) Microplastic saturation in oceanic sediment constitutes one of the century's most intractable ecological crises.\\n(3) Supranational conventions have begun imposing binding bans on non-essential virgin polymers.\\n(4) Single-use packaging polymers, engineered for durability, take up to 400 years to photochemically degrade.\\n(5) Venture funding for synthetic biology startups focused on cultivated meat reached record heights last quarter.",
+      "options": null,
+      "correct_answer": "5",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 4,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "Five security software researchers\u2014Ananya, Bashir, Cathy, Dinesh, and Esha\u2014participated in a two-stage bug-hunting tournament on Server-Alpha and Server-Beta. The bug counts on Server-Alpha form an AP with common difference $15$: $\\{20, 35, 50, 65, 80\\}$. On Server-Beta, the counts form an AP with common difference $20$: $\\{30, 50, 70, 90, 110\\}$. Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh scored the median count on both servers. What is the maximum possible difference between the bugs found by a single researcher across the two servers?",
+      "options": {
+        "A": "75",
+        "B": "90",
+        "C": "60",
+        "D": "80"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0,
+      "has_image": true,
+      "image_page": 2,
+      "image_data": "data:image/png;base64,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"
+    },
+    {
+      "id": 5,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "A university organized a student activity fair where students could enroll in four clubs: Photography ($PH$), Robotics ($RB$), Drama ($DR$), and Entrepreneurship ($EN$). Exactly 80 students enrolled in no club. Among students enrolled in clubs, the number enrolled in all four clubs is $x$. The number of students enrolled in exactly three clubs equals $4x$, which also equals the 80 students who enrolled in no club. How many students were enrolled in all four clubs?",
+      "options": null,
+      "correct_answer": "20",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 6,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MSQ",
+      "text": "Five student mentors\u2014Aman, Bhaskar, Charan, Deepak, and Ehsaan\u2014are seated in chairs 1 to 5 from left to right. Each distributes QA, VA, and DI booklets. Base costs: Rs. 20 (QA), Rs. 30 (VA), Rs. 50 (DI). Total expenses: Aman (Rs. 300), Bhaskar (Rs. 360), Charan (Rs. 550), Deepak (Rs. 620), Ehsaan (Rs. 600). Charan sits to the immediate left of Bhaskar (who distributed 5 QA and 2 VA booklets). Bhaskar and the mentor to his immediate right distributed 11 VA booklets in total. Which of the following statement(s) is/are TRUE?",
+      "options": {
+        "A": "Ehsaan is seated in Chair 4.",
+        "B": "Charan distributed more than 10 QA booklets.",
+        "C": "Bhaskar distributed exactly 5 QA and 2 VA booklets.",
+        "D": "Aman is seated in Chair 1."
+      },
+      "correct_answer": "A, C",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 7,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "Four employees, A, B, C, and D, received integer performance scores $a, b, c, d$. Each employee's revised score is their original score plus the arithmetic mean of the other three. The revised scores are $56, 74, 92,$ and $114$. What is the average of the original performance scores of the four employees? (Enter the exact integer)",
+      "options": null,
+      "correct_answer": "42",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 8,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Find the maximum real value of $M$ such that the inequality $$3^x + \\frac{576}{3^x} - M \\ge 0$$ holds for all real numbers $x$.",
+      "options": {
+        "A": "24",
+        "B": "36",
+        "C": "42",
+        "D": "48"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 9,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Consider the quadratic equation $(k + 1)x^2 - 2(k + 1)x + k = 0$, where $k$ is a real parameter with $k \\ne -1$. For what range of values of $k$ does the equation have both roots strictly greater than $0$ and strictly less than $2$?",
+      "options": {
+        "A": "(-1, 0)",
+        "B": "[0, \\infty)",
+        "C": "(-1, \\infty)",
+        "D": "(0, \\infty)"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 10,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "Let $y = |x + 2| + |x - 4| + |x - 8|$, where $x$ is a real number. What is the minimum real value of $y$?",
+      "options": null,
+      "correct_answer": "10",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 11,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "Let $g(n)$ be a function defined for all integers $n \\ge 0$. If $g(1) = 1$ and $g$ satisfies $$g(a - b) + g(a + b) = \\frac{g(2a) + g(2b)}{2}$$ for all integers $a \\ge b \\ge 0$, then $g(2026)$ is equal to:",
+      "options": {
+        "A": "2026^2",
+        "B": "2026",
+        "C": "2027^2",
+        "D": "2025 \\times 2026"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 12,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "In trapezium $ABCD$, side $AB$ is parallel to $DC$, $AB = 12\\text{ cm}$, $DC = 20\\text{ cm}$, $AD = 34\\text{ cm}$, and $\\angle DAB = 90^\\circ$. Point $E$ lies on segment $AD$ such that $BE \\perp EC$. What is the maximum possible area (in sq. cm) of $\\triangle BEC$?",
+      "options": null,
+      "correct_answer": "300",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    }
+  ]
+}

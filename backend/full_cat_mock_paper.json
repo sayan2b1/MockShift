@@ -1,0 +1,917 @@
+{
+  "exam_title": "CAT 2026 Full-Length Mock Paper (68 Questions)",
+  "exam_mode": "CAT",
+  "duration_minutes": 120,
+  "sections": [
+    "Verbal Ability & Reading Comprehension",
+    "Data Interpretation & Logical Reasoning",
+    "Quantitative Ability"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>I left journalism to become a television writer and novelist more than a decade ago, as the streaming wars set off by Netflix fed a seemingly unlimited demand for eight-to-12-episode seasons of scripted drama. I still recall a showrunner who was interviewing me for a job saying this was the only industry in which you fail upward. I didn't inquire if he was referring to me specifically. But having reported on the American workforce for a few decades, I knew that wasn't true: America is replete with undeserved upward mobility. Downward mobility was more common, though, in industry after industry, from steel to stockbrokers.</p>\n<p>Having already ridden the magazine industry almost all the way down, I had stumbled onto another gravy train in my middle years. God bless peak TV. Many of us recall fondly that golden age of premium scripted drama, which started in the late 1990s with \"The Sopranos,\" \"The Wire,\" \"Breaking Bad,\" \"Mad Men.\" TV had been elevated into a literary art form, one that remunerated far better than actual literature.</p>\n<p>Writing novels proved financially bleak, but it had been good training, because TV seasons had become novelistic. If during my childhood every episode of every drama ended where it began – the case solved, the killer convicted, the relationship repaired – television seasons now had multiple story arcs, secondary and tertiary characters were getting their own runs and favorite characters were even killed off in this new, multi-mirrored medium. I would get writing work on \"Ray Donovan,\" \"Monarch: Legacy of Monsters,\" \"Tokyo Vice\" and a few others.</p>\n<p>Now the news in Hollywood is disturbingly familiar to a print refugee like me: mergers and acquisitions, as companies seek economies of scale. The latest doom indicator is Paramount-Skydance's impending acquisition of Warner Brothers Discovery, which is likely to cost thousands of jobs in Hollywood once the combined companies restructure. It will also most likely mean, despite Paramount's word to the contrary, fewer shows and movies being produced. The new corporate owners think there's too much content, as they like to call it, being produced and not enough money. At least in the context of the tens of billions of dollars in debt these mergers took on that now has to be paid off. Peak TV has fallen off a cliff.</p>\n<p>That is, unless the group of 12 states, including California, that have filed an antitrust suit against the deal can keep the two apart. A federal judge just applied the brakes, issuing a temporary restraining order that stops the two companies from closing the deal for 14 days. The court is pondering whether to hold things up further, until the states' legal challenge is resolved. The suit alleges that the combination is anticompetitive and thus illegal. The states' aim is to stop David Ellison, who runs Paramount, and his billionaire father Larry Ellison, who founded Oracle, from gaining control of two Hollywood studios and two big subscription streaming services, Paramount+ and HBO Max. I've written for shows for both of them.</p>\n<p>Paramount's execs claim they'll produce just as much entertainment, which they very likely won't. Also, that by making more with less in the slimmed-down company, it will actually be good for the industry. That's a pitch to Wall Street, not to the actual human beings like me who make up the industry. They'll make lower-cost movies and shows, perhaps using A.I.</p>\n<p>The possible merger isn't the only thing causing problems for the industry. Even the way we consume news is changing. I learned about the Paramount deal not from cable news nor from a newspaper – that would be quaint – but, as I recall, from a video fed to me via TikTok that may have been narrated by an A.I.-generated newscaster. I honestly couldn't tell if she was real or not.</p>\n\n<p>Which one of the following best captures the author's central concern regarding the current transformation of the television industry?</p>",
+      "options": {
+        "A": "The expansion of streaming platforms has weakened the creative standards that once defined premium television dramas.",
+        "B": "Corporate consolidation is reducing creative opportunities by placing financial efficiency ahead of sustained content production.",
+        "C": "The decline of traditional journalism has compelled experienced writers to pursue careers in television entertainment.",
+        "D": "The growing use of artificial intelligence will eventually replace most writers working in scripted television."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 2,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>I left journalism to become a television writer and novelist more than a decade ago, as the streaming wars set off by Netflix fed a seemingly unlimited demand for eight-to-12-episode seasons of scripted drama. I still recall a showrunner who was interviewing me for a job saying this was the only industry in which you fail upward. I didn't inquire if he was referring to me specifically. But having reported on the American workforce for a few decades, I knew that wasn't true: America is replete with undeserved upward mobility. Downward mobility was more common, though, in industry after industry, from steel to stockbrokers.</p>\n<p>Having already ridden the magazine industry almost all the way down, I had stumbled onto another gravy train in my middle years. God bless peak TV. Many of us recall fondly that golden age of premium scripted drama, which started in the late 1990s with \"The Sopranos,\" \"The Wire,\" \"Breaking Bad,\" \"Mad Men.\" TV had been elevated into a literary art form, one that remunerated far better than actual literature.</p>\n<p>Writing novels proved financially bleak, but it had been good training, because TV seasons had become novelistic. If during my childhood every episode of every drama ended where it began – the case solved, the killer convicted, the relationship repaired – television seasons now had multiple story arcs, secondary and tertiary characters were getting their own runs and favorite characters were even killed off in this new, multi-mirrored medium. I would get writing work on \"Ray Donovan,\" \"Monarch: Legacy of Monsters,\" \"Tokyo Vice\" and a few others.</p>\n<p>Now the news in Hollywood is disturbingly familiar to a print refugee like me: mergers and acquisitions, as companies seek economies of scale. The latest doom indicator is Paramount-Skydance's impending acquisition of Warner Brothers Discovery, which is likely to cost thousands of jobs in Hollywood once the combined companies restructure. It will also most likely mean, despite Paramount's word to the contrary, fewer shows and movies being produced. The new corporate owners think there's too much content, as they like to call it, being produced and not enough money. At least in the context of the tens of billions of dollars in debt these mergers took on that now has to be paid off. Peak TV has fallen off a cliff.</p>\n<p>That is, unless the group of 12 states, including California, that have filed an antitrust suit against the deal can keep the two apart. A federal judge just applied the brakes, issuing a temporary restraining order that stops the two companies from closing the deal for 14 days. The court is pondering whether to hold things up further, until the states' legal challenge is resolved. The suit alleges that the combination is anticompetitive and thus illegal. The states' aim is to stop David Ellison, who runs Paramount, and his billionaire father Larry Ellison, who founded Oracle, from gaining control of two Hollywood studios and two big subscription streaming services, Paramount+ and HBO Max. I've written for shows for both of them.</p>\n<p>Paramount's execs claim they'll produce just as much entertainment, which they very likely won't. Also, that by making more with less in the slimmed-down company, it will actually be good for the industry. That's a pitch to Wall Street, not to the actual human beings like me who make up the industry. They'll make lower-cost movies and shows, perhaps using A.I.</p>\n<p>The possible merger isn't the only thing causing problems for the industry. Even the way we consume news is changing. I learned about the Paramount deal not from cable news nor from a newspaper – that would be quaint – but, as I recall, from a video fed to me via TikTok that may have been narrated by an A.I.-generated newscaster. I honestly couldn't tell if she was real or not.</p>\n\n<p>The author mentions that he first learned about the Paramount deal through a TikTok video possibly narrated by an AI-generated newscaster primarily to illustrate that:</p>",
+      "options": {
+        "A": "technological innovation is blurring the distinction between authentic journalism and algorithmically generated media without necessarily improving public understanding.",
+        "B": "the decline of traditional news outlets has made social media platforms the dominant source of information about developments in the entertainment industry.",
+        "C": "the financial pressures affecting Hollywood have accelerated the media industry's dependence on artificial intelligence across both content creation and news reporting.",
+        "D": "the same technological and industrial shifts transforming entertainment production are also reshaping the ways in which news and information are delivered."
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 3,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>I left journalism to become a television writer and novelist more than a decade ago, as the streaming wars set off by Netflix fed a seemingly unlimited demand for eight-to-12-episode seasons of scripted drama. I still recall a showrunner who was interviewing me for a job saying this was the only industry in which you fail upward. I didn't inquire if he was referring to me specifically. But having reported on the American workforce for a few decades, I knew that wasn't true: America is replete with undeserved upward mobility. Downward mobility was more common, though, in industry after industry, from steel to stockbrokers.</p>\n<p>Having already ridden the magazine industry almost all the way down, I had stumbled onto another gravy train in my middle years. God bless peak TV. Many of us recall fondly that golden age of premium scripted drama, which started in the late 1990s with \"The Sopranos,\" \"The Wire,\" \"Breaking Bad,\" \"Mad Men.\" TV had been elevated into a literary art form, one that remunerated far better than actual literature.</p>\n<p>Writing novels proved financially bleak, but it had been good training, because TV seasons had become novelistic. If during my childhood every episode of every drama ended where it began – the case solved, the killer convicted, the relationship repaired – television seasons now had multiple story arcs, secondary and tertiary characters were getting their own runs and favorite characters were even killed off in this new, multi-mirrored medium. I would get writing work on \"Ray Donovan,\" \"Monarch: Legacy of Monsters,\" \"Tokyo Vice\" and a few others.</p>\n<p>Now the news in Hollywood is disturbingly familiar to a print refugee like me: mergers and acquisitions, as companies seek economies of scale. The latest doom indicator is Paramount-Skydance's impending acquisition of Warner Brothers Discovery, which is likely to cost thousands of jobs in Hollywood once the combined companies restructure. It will also most likely mean, despite Paramount's word to the contrary, fewer shows and movies being produced. The new corporate owners think there's too much content, as they like to call it, being produced and not enough money. At least in the context of the tens of billions of dollars in debt these mergers took on that now has to be paid off. Peak TV has fallen off a cliff.</p>\n<p>That is, unless the group of 12 states, including California, that have filed an antitrust suit against the deal can keep the two apart. A federal judge just applied the brakes, issuing a temporary restraining order that stops the two companies from closing the deal for 14 days. The court is pondering whether to hold things up further, until the states' legal challenge is resolved. The suit alleges that the combination is anticompetitive and thus illegal. The states' aim is to stop David Ellison, who runs Paramount, and his billionaire father Larry Ellison, who founded Oracle, from gaining control of two Hollywood studios and two big subscription streaming services, Paramount+ and HBO Max. I've written for shows for both of them.</p>\n<p>Paramount's execs claim they'll produce just as much entertainment, which they very likely won't. Also, that by making more with less in the slimmed-down company, it will actually be good for the industry. That's a pitch to Wall Street, not to the actual human beings like me who make up the industry. They'll make lower-cost movies and shows, perhaps using A.I.</p>\n<p>The possible merger isn't the only thing causing problems for the industry. Even the way we consume news is changing. I learned about the Paramount deal not from cable news nor from a newspaper – that would be quaint – but, as I recall, from a video fed to me via TikTok that may have been narrated by an A.I.-generated newscaster. I honestly couldn't tell if she was real or not.</p>\n\n<p>Which one of the following, if true, would most weaken the author's scepticism about the proposed Paramount-Warner Brothers merger?</p>",
+      "options": {
+        "A": "Streaming audiences increasingly favour lower-cost unscripted programming over expensive multi-season scripted television dramas.",
+        "B": "Independent production companies continue to produce critically acclaimed scripted series despite rising production costs across the industry.",
+        "C": "Following the merger, the combined company continues commissioning a similar number of scripted productions while maintaining overall employment levels.",
+        "D": "Investors consistently reward media companies that improve profitability through cost reductions despite relatively stable subscriber numbers."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 4,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>I left journalism to become a television writer and novelist more than a decade ago, as the streaming wars set off by Netflix fed a seemingly unlimited demand for eight-to-12-episode seasons of scripted drama. I still recall a showrunner who was interviewing me for a job saying this was the only industry in which you fail upward. I didn't inquire if he was referring to me specifically. But having reported on the American workforce for a few decades, I knew that wasn't true: America is replete with undeserved upward mobility. Downward mobility was more common, though, in industry after industry, from steel to stockbrokers.</p>\n<p>Having already ridden the magazine industry almost all the way down, I had stumbled onto another gravy train in my middle years. God bless peak TV. Many of us recall fondly that golden age of premium scripted drama, which started in the late 1990s with \"The Sopranos,\" \"The Wire,\" \"Breaking Bad,\" \"Mad Men.\" TV had been elevated into a literary art form, one that remunerated far better than actual literature.</p>\n<p>Writing novels proved financially bleak, but it had been good training, because TV seasons had become novelistic. If during my childhood every episode of every drama ended where it began – the case solved, the killer convicted, the relationship repaired – television seasons now had multiple story arcs, secondary and tertiary characters were getting their own runs and favorite characters were even killed off in this new, multi-mirrored medium. I would get writing work on \"Ray Donovan,\" \"Monarch: Legacy of Monsters,\" \"Tokyo Vice\" and a few others.</p>\n<p>Now the news in Hollywood is disturbingly familiar to a print refugee like me: mergers and acquisitions, as companies seek economies of scale. The latest doom indicator is Paramount-Skydance's impending acquisition of Warner Brothers Discovery, which is likely to cost thousands of jobs in Hollywood once the combined companies restructure. It will also most likely mean, despite Paramount's word to the contrary, fewer shows and movies being produced. The new corporate owners think there's too much content, as they like to call it, being produced and not enough money. At least in the context of the tens of billions of dollars in debt these mergers took on that now has to be paid off. Peak TV has fallen off a cliff.</p>\n<p>That is, unless the group of 12 states, including California, that have filed an antitrust suit against the deal can keep the two apart. A federal judge just applied the brakes, issuing a temporary restraining order that stops the two companies from closing the deal for 14 days. The court is pondering whether to hold things up further, until the states' legal challenge is resolved. The suit alleges that the combination is anticompetitive and thus illegal. The states' aim is to stop David Ellison, who runs Paramount, and his billionaire father Larry Ellison, who founded Oracle, from gaining control of two Hollywood studios and two big subscription streaming services, Paramount+ and HBO Max. I've written for shows for both of them.</p>\n<p>Paramount's execs claim they'll produce just as much entertainment, which they very likely won't. Also, that by making more with less in the slimmed-down company, it will actually be good for the industry. That's a pitch to Wall Street, not to the actual human beings like me who make up the industry. They'll make lower-cost movies and shows, perhaps using A.I.</p>\n<p>The possible merger isn't the only thing causing problems for the industry. Even the way we consume news is changing. I learned about the Paramount deal not from cable news nor from a newspaper – that would be quaint – but, as I recall, from a video fed to me via TikTok that may have been narrated by an A.I.-generated newscaster. I honestly couldn't tell if she was real or not.</p>\n\n<p>Which one of the following can most reasonably be inferred about the author's attitude towards the executives' justification for the proposed merger?</p>",
+      "options": {
+        "A": "He believes the executives place excessive emphasis on short-term profitability at the expense of long-term subscriber growth.",
+        "B": "He accepts that industry-wide restructuring may be necessary, although it will inevitably create difficulties for creative professionals.",
+        "C": "He remains unconvinced that the proposed operational efficiencies will produce lasting benefits for either audiences or content creators.",
+        "D": "He sees the executives' claims as aimed at investors rather than industry workers."
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 5,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "<p>The four sentences (labelled 1, 2, 3 and 4) given below, when properly sequenced, would yield a coherent paragraph. Decide on the proper sequencing of the order of the sentences and key in the sequence of the four numbers as your answer.</p><p>(1) And whenever political considerations did come in, they've come in the form of an anti-government bent.<br>(2) But another influencing element is that the people designing our gadgets tend to be people well versed in programming and other fields distant from a deep understanding of ethics or politics.<br>(3) Considerations about how technology could impact democracy were largely not part of the design of our digital environment.<br>(4) That said, there are notable exceptions like Reid Hoffman, who co-founded LinkedIn, one of the least toxic social media platforms we have.</p>",
+      "options": null,
+      "correct_answer": "3124",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 6,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>The passage given below is followed by four alternate summaries. Choose the option that best captures the essence of the passage.</p><p><em>If we take for granted that people are made subjects through language, that language reflects the world we live in and shapes that world, these fissures in my languages make sense. They are exactly what should be happening. Today, we Iranians are cornered, on the one hand, by the violence of the Iranian regime against the right to life and dignity, and, on the other, by the US-Israeli invasion that is demolishing the infrastructures of daily life – energy facilities, schools and universities, bridges, and more. The world we have known is crumbling, and we do not yet have language capable of capturing and containing the horrifying truths of AI-driven wars and malicious governments. This is our moment of collapse, both of language and in language. What can we do now but mourn our losses?</em></p>",
+      "options": {
+        "A": "The challenges Iranians face, due to both the violence of the Iranian regime and the US-Israeli invasion, have left them unable to describe the truth of AI-driven wars and corrupt governments.",
+        "B": "The collapse of language in Iranian society is caused by both the regime's violence and foreign invasion, highlighting the inability to describe the painful truths of modern warfare.",
+        "C": "The Iranian regime's violence and the US-Israeli invasion have left Iranians in a crisis, where language cannot capture the brutality of political conflicts or modern warfare.",
+        "D": "Caught in a tragic moment, the Iranian people cannot describe their suffering caused by the regime's violence and foreign interference, leaving them with sorrow for their lost world."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 7,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "<p>The four sentences (labelled 1, 2, 3 and 4) given below, when properly sequenced, would yield a coherent paragraph. Decide on the proper sequencing of the order of the sentences and key in the sequence of the four numbers as your answer.</p><p>(1) I was glad to see how well preserved his imagination was, how attuned his ear for irony, how sharp his literary eye.<br>(2) There's genuine drama in Merton's fascination with Buddhism and in his reading of Karl Marx at the height of the Cold War.<br>(3) My experience of the Asian Journal could not have been more different.<br>(4) He observes the rosy light, the kites and the domes of New Delhi with an artist's sense of gratitude.</p>",
+      "options": null,
+      "correct_answer": "3142",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 8,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "<p>The four sentences (labelled 1, 2, 3 and 4) given below, when properly sequenced, would yield a coherent paragraph. Decide on the proper sequencing of the order of the sentences and key in the sequence of the four numbers as your answer.</p><p>(1) To resist it, we need to clarify misunderstandings, not repeat them – to correct errors, not perpetuate them.<br>(2) Now, more than ever, we need the intellectual and imaginative resources to work out how best to live together without appealing to political ideologies, religious doctrines, or philosophical systems.<br>(3) And yet, we are currently living through a cultural moment in which, increasingly, political violence is legitimated, in both its physical and symbolic forms, reinforced by the forces of abstraction – media, technology, government, and bureaucracy – and justified daily through individual polemic passing as political debate.<br>(4) We need to challenge the normalization of political violence and address the growing cultural divide.</p>",
+      "options": null,
+      "correct_answer": "2341",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 9,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>There are people who love physics, but physics doesn't quite love you back. When you love something that much and it doesn't work out, it's hard to let go. Science can be so beautiful and, even emotional. So, naturally, I did what no tortured artist has ever done before: I started writing about my unrequited love. I wanted people to see the science that I see, and feel it the way I do.</p>\n<p>If I got lucky, I'd find one of those stories that make science feel human. Stories of people who cared too much. The ones who spent years chasing starlight or boiling mercury, convinced that, if they just measured carefully enough, everything would finally make sense. They believed the Universe could be solved with mathematics and patience.</p>\n<p>I couldn't tell if I was drawn to those old stories because they were profound or just nostalgic – and the Putnam Gallery in Cambridge, Massachusetts (less like a museum than a well-lit storage space) was where I would find out. The place was so little known that I was the only person there, aside from the woman at the front desk, and the quiet gave me the time to notice what became, to me, the funniest thing in the room: almost every instrument I looked at pointed to the same thing. A telescope built to track Venus. A map charting her path across the Sun. A pendulum clock precisely calibrated to catch the exact moment of her transit. Venus, Venus, Venus.</p>\n<p>The fact that so many astronomers seemed to be obsessed with Venus was ironic. Of all the astronomical bodies there were to observe, and all the other science there was to do, these old men were focused on the one planet named after the most beautiful woman in existence. Typical!</p>\n<p>Venus would appear to trace different paths across the Sun depending on where on Earth you were watching from. Even though the joke was what pulled me in, I realised that the obsession had a purpose. It was about measuring the dimensions of the solar system. For centuries, astronomers knew the relative distances of the planets: Venus was closer to the Sun than Earth was, and Mars was further away. But they didn't know the scale. They had the map but not the ruler. How many kilometres lay between Earth and the Sun? No one had a solid number.</p>\n\n<p>Which one of the following best describes the logical progression of the passage?</p>",
+      "options": {
+        "A": "It begins with the transit of Venus, shifts to the author's scientific background, and ends by explaining how astronomers eventually solved the problem.",
+        "B": "It introduces the transit of Venus, moves to the author's museum experience, and ends by revealing the scientific purpose behind the fascination with Venus.",
+        "C": "It contrasts modern astronomy with early scientific practices before arguing that emotion often hindered scientific progress.",
+        "D": "It traces the history of astronomy before explaining the significance of preserving old scientific instruments."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 10,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>There are people who love physics, but physics doesn't quite love you back. When you love something that much and it doesn't work out, it's hard to let go. Science can be so beautiful and, even emotional. So, naturally, I did what no tortured artist has ever done before: I started writing about my unrequited love. I wanted people to see the science that I see, and feel it the way I do.</p>\n<p>If I got lucky, I'd find one of those stories that make science feel human. Stories of people who cared too much. The ones who spent years chasing starlight or boiling mercury, convinced that, if they just measured carefully enough, everything would finally make sense. They believed the Universe could be solved with mathematics and patience.</p>\n<p>I couldn't tell if I was drawn to those old stories because they were profound or just nostalgic – and the Putnam Gallery in Cambridge, Massachusetts (less like a museum than a well-lit storage space) was where I would find out. The place was so little known that I was the only person there, aside from the woman at the front desk, and the quiet gave me the time to notice what became, to me, the funniest thing in the room: almost every instrument I looked at pointed to the same thing. A telescope built to track Venus. A map charting her path across the Sun. A pendulum clock precisely calibrated to catch the exact moment of her transit. Venus, Venus, Venus.</p>\n<p>The fact that so many astronomers seemed to be obsessed with Venus was ironic. Of all the astronomical bodies there were to observe, and all the other science there was to do, these old men were focused on the one planet named after the most beautiful woman in existence. Typical!</p>\n<p>Venus would appear to trace different paths across the Sun depending on where on Earth you were watching from. Even though the joke was what pulled me in, I realised that the obsession had a purpose. It was about measuring the dimensions of the solar system. For centuries, astronomers knew the relative distances of the planets: Venus was closer to the Sun than Earth was, and Mars was further away. But they didn't know the scale. They had the map but not the ruler. How many kilometres lay between Earth and the Sun? No one had a solid number.</p>\n\n<p>Suppose historians discovered evidence that eighteenth-century astronomers already possessed an accurate measurement of the Earth-Sun distance before the transit expeditions were organised. Which one of the following aspects of the passage would be most seriously undermined?</p>",
+      "options": {
+        "A": "The author's suggestion that historical artefacts reveal the human motivations behind important scientific discoveries.",
+        "B": "The passage's explanation that the fascination with Venus arose from the need to determine the solar system's true scale.",
+        "C": "The author's claim that scientific progress often reflects persistence and emotional commitment as much as technical skill.",
+        "D": "The passage's description of the transit of Venus as an exceptionally rare event in observational astronomy."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 11,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>There are people who love physics, but physics doesn't quite love you back. When you love something that much and it doesn't work out, it's hard to let go. Science can be so beautiful and, even emotional. So, naturally, I did what no tortured artist has ever done before: I started writing about my unrequited love. I wanted people to see the science that I see, and feel it the way I do.</p>\n<p>If I got lucky, I'd find one of those stories that make science feel human. Stories of people who cared too much. The ones who spent years chasing starlight or boiling mercury, convinced that, if they just measured carefully enough, everything would finally make sense. They believed the Universe could be solved with mathematics and patience.</p>\n<p>I couldn't tell if I was drawn to those old stories because they were profound or just nostalgic – and the Putnam Gallery in Cambridge, Massachusetts (less like a museum than a well-lit storage space) was where I would find out. The place was so little known that I was the only person there, aside from the woman at the front desk, and the quiet gave me the time to notice what became, to me, the funniest thing in the room: almost every instrument I looked at pointed to the same thing. A telescope built to track Venus. A map charting her path across the Sun. A pendulum clock precisely calibrated to catch the exact moment of her transit. Venus, Venus, Venus.</p>\n<p>The fact that so many astronomers seemed to be obsessed with Venus was ironic. Of all the astronomical bodies there were to observe, and all the other science there was to do, these old men were focused on the one planet named after the most beautiful woman in existence. Typical!</p>\n<p>Venus would appear to trace different paths across the Sun depending on where on Earth you were watching from. Even though the joke was what pulled me in, I realised that the obsession had a purpose. It was about measuring the dimensions of the solar system. For centuries, astronomers knew the relative distances of the planets: Venus was closer to the Sun than Earth was, and Mars was further away. But they didn't know the scale. They had the map but not the ruler. How many kilometres lay between Earth and the Sun? No one had a solid number.</p>\n\n<p>The author's description of himself as someone whose \"love physics but physics doesn't quite love you back\" most strongly suggests that he:</p>",
+      "options": {
+        "A": "considers explaining scientific ideas more personally fulfilling than pursuing research in academic physics.",
+        "B": "believes that genuine appreciation of science depends more on curiosity than on formal scientific training.",
+        "C": "recognises his limitations as a researcher while remaining deeply committed to communicating the beauty of science.",
+        "D": "regrets leaving academic physics because science writing cannot fully satisfy his intellectual ambitions."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 12,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>There are people who love physics, but physics doesn't quite love you back. When you love something that much and it doesn't work out, it's hard to let go. Science can be so beautiful and, even emotional. So, naturally, I did what no tortured artist has ever done before: I started writing about my unrequited love. I wanted people to see the science that I see, and feel it the way I do.</p>\n<p>If I got lucky, I'd find one of those stories that make science feel human. Stories of people who cared too much. The ones who spent years chasing starlight or boiling mercury, convinced that, if they just measured carefully enough, everything would finally make sense. They believed the Universe could be solved with mathematics and patience.</p>\n<p>I couldn't tell if I was drawn to those old stories because they were profound or just nostalgic – and the Putnam Gallery in Cambridge, Massachusetts (less like a museum than a well-lit storage space) was where I would find out. The place was so little known that I was the only person there, aside from the woman at the front desk, and the quiet gave me the time to notice what became, to me, the funniest thing in the room: almost every instrument I looked at pointed to the same thing. A telescope built to track Venus. A map charting her path across the Sun. A pendulum clock precisely calibrated to catch the exact moment of her transit. Venus, Venus, Venus.</p>\n<p>The fact that so many astronomers seemed to be obsessed with Venus was ironic. Of all the astronomical bodies there were to observe, and all the other science there was to do, these old men were focused on the one planet named after the most beautiful woman in existence. Typical!</p>\n<p>Venus would appear to trace different paths across the Sun depending on where on Earth you were watching from. Even though the joke was what pulled me in, I realised that the obsession had a purpose. It was about measuring the dimensions of the solar system. For centuries, astronomers knew the relative distances of the planets: Venus was closer to the Sun than Earth was, and Mars was further away. But they didn't know the scale. They had the map but not the ruler. How many kilometres lay between Earth and the Sun? No one had a solid number.</p>\n\n<p>Which one of the following can most reasonably be inferred about the author's visit to the Putnam Gallery?</p>",
+      "options": {
+        "A": "It reinforced his belief that scientific instruments are valuable primarily because of their technological sophistication.",
+        "B": "It transformed an amusing historical observation into an appreciation of the scientific problem those instruments addressed.",
+        "C": "It convinced him that museums should present scientific discoveries through interactive exhibits rather than preserved artefacts.",
+        "D": "It revealed that early astronomers devoted excessive attention to Venus at the expense of more important scientific pursuits."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 13,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>A world free of poverty would once have sounded fanciful. For most of human history it was barely even imaginable. Around 1800, when more than eight in ten people were destitute, Thomas Malthus, a particularly dismal scientist, insisted it was an iron law that \"Some human beings must suffer from want....\" The idea that poverty could be eliminated scarcely appears in print before the mid-20th century. Even Jesus, in three of the Gospels, tells his followers that the poor will always be with them.</p>\n<p>At the turn of the last millennium, the world opted to try anyway. ...1.2bn people escaped penury in those 25 years, bringing the global poverty rate down from 43% to 13% (using today's poverty line). Economic growth did nearly all the work. A booming China accounted for about two-thirds of the decline, red-hot India and Indonesia did much of the rest. It looked as though growth miracles might consign poverty to the past.</p>\n<p>Miracles, however, are hard to repeat. Since 2015 the rate of poverty reduction has slowed sharply, to about a quarter of its previous pace. Roughly one in ten of the world's people, or 830m, are still destitute today. The old playbook – providing aid in the hope it will boost growth – has disappointed, not least because the recipe for such growth remains elusive. Moreover, poverty is now concentrated in places where growth is harder to achieve, and population size is rising fast. Africa; the Democratic Republic of Congo, Ethiopia and Nigeria alone account for a quarter of the total. If current poverty rates persist, rapid population growth means that these three could be home to more than two-fifths of the world's poorest by 2050. Will Malthus be vindicated after all?</p>\n<p>Not necessarily, because there is a simpler way to end destitution. Instead of turning Congo into China, it involves closing the gap between what people have and what they need to push them over the poverty line: if someone lives on $2 a day and the threshold is $3, they need $1 more. With perfect information, the cost of doing so would be strikingly low, and falling. Measured in today's dollars, it dropped from $330bn a year in 1990 to $90bn in 2023.</p>\n<p>Ending extreme poverty therefore comes down to identifying who needs what. A recent paper by Roshni Sahoo of Stanford University and co-authors propose... a machine-learning algorithm to assign transfer amounts – different for each person – so as to minimise the chance that anyone remains in poverty after receiving support... In other words, it targets the poverty gap, not the line itself, albeit less efficiently than would be possible with perfect information. The authors then used this framework to estimate the cost of (nearly) eliminating extreme poverty worldwide.</p>\n<p>The result is a surprisingly small bill. The paper's estimates suggest it would cost $318bn a year to reduce the global poverty rate to 1% at the $2.15-a-day line – roughly 0.3% of global GDP – with imperfect, real-world information. Even using the World Bank's newer $3-a-day threshold, the bill rises to only $466bn, or about 0.5% of global GDP. That is less than a third of what the world spends on alcohol each year, and well below what rich countries devote to farm subsidies.</p>\n\n<p>The author mentions Jesus primarily to:</p>",
+      "options": {
+        "A": "Emphasise that poverty persists despite advances in economic development.",
+        "B": "Contrast religious teachings with modern economic theories about poverty.",
+        "C": "Demonstrate that moral authorities discouraged efforts to eliminate poverty.",
+        "D": "Illustrate the long-standing belief that poverty is inevitable and enduring."
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 14,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>A world free of poverty would once have sounded fanciful. For most of human history it was barely even imaginable. Around 1800, when more than eight in ten people were destitute, Thomas Malthus, a particularly dismal scientist, insisted it was an iron law that \"Some human beings must suffer from want....\" The idea that poverty could be eliminated scarcely appears in print before the mid-20th century. Even Jesus, in three of the Gospels, tells his followers that the poor will always be with them.</p>\n<p>At the turn of the last millennium, the world opted to try anyway. ...1.2bn people escaped penury in those 25 years, bringing the global poverty rate down from 43% to 13% (using today's poverty line). Economic growth did nearly all the work. A booming China accounted for about two-thirds of the decline, red-hot India and Indonesia did much of the rest. It looked as though growth miracles might consign poverty to the past.</p>\n<p>Miracles, however, are hard to repeat. Since 2015 the rate of poverty reduction has slowed sharply, to about a quarter of its previous pace. Roughly one in ten of the world's people, or 830m, are still destitute today. The old playbook – providing aid in the hope it will boost growth – has disappointed, not least because the recipe for such growth remains elusive. Moreover, poverty is now concentrated in places where growth is harder to achieve, and population size is rising fast. Africa; the Democratic Republic of Congo, Ethiopia and Nigeria alone account for a quarter of the total. If current poverty rates persist, rapid population growth means that these three could be home to more than two-fifths of the world's poorest by 2050. Will Malthus be vindicated after all?</p>\n<p>Not necessarily, because there is a simpler way to end destitution. Instead of turning Congo into China, it involves closing the gap between what people have and what they need to push them over the poverty line: if someone lives on $2 a day and the threshold is $3, they need $1 more. With perfect information, the cost of doing so would be strikingly low, and falling. Measured in today's dollars, it dropped from $330bn a year in 1990 to $90bn in 2023.</p>\n<p>Ending extreme poverty therefore comes down to identifying who needs what. A recent paper by Roshni Sahoo of Stanford University and co-authors propose... a machine-learning algorithm to assign transfer amounts – different for each person – so as to minimise the chance that anyone remains in poverty after receiving support... In other words, it targets the poverty gap, not the line itself, albeit less efficiently than would be possible with perfect information. The authors then used this framework to estimate the cost of (nearly) eliminating extreme poverty worldwide.</p>\n<p>The result is a surprisingly small bill. The paper's estimates suggest it would cost $318bn a year to reduce the global poverty rate to 1% at the $2.15-a-day line – roughly 0.3% of global GDP – with imperfect, real-world information. Even using the World Bank's newer $3-a-day threshold, the bill rises to only $466bn, or about 0.5% of global GDP. That is less than a third of what the world spends on alcohol each year, and well below what rich countries devote to farm subsidies.</p>\n\n<p>The author uses the term \"miracles\" primarily to:</p>",
+      "options": {
+        "A": "Imply that earlier poverty reduction was entirely accidental and unplanned.",
+        "B": "Suggest that economic growth operates independently of deliberate policy efforts.",
+        "C": "Highlight that rapid poverty reduction through growth is difficult to replicate.",
+        "D": "Emphasise that extraordinary economic outcomes require sustained global cooperation."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 15,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>A world free of poverty would once have sounded fanciful. For most of human history it was barely even imaginable. Around 1800, when more than eight in ten people were destitute, Thomas Malthus, a particularly dismal scientist, insisted it was an iron law that \"Some human beings must suffer from want....\" The idea that poverty could be eliminated scarcely appears in print before the mid-20th century. Even Jesus, in three of the Gospels, tells his followers that the poor will always be with them.</p>\n<p>At the turn of the last millennium, the world opted to try anyway. ...1.2bn people escaped penury in those 25 years, bringing the global poverty rate down from 43% to 13% (using today's poverty line). Economic growth did nearly all the work. A booming China accounted for about two-thirds of the decline, red-hot India and Indonesia did much of the rest. It looked as though growth miracles might consign poverty to the past.</p>\n<p>Miracles, however, are hard to repeat. Since 2015 the rate of poverty reduction has slowed sharply, to about a quarter of its previous pace. Roughly one in ten of the world's people, or 830m, are still destitute today. The old playbook – providing aid in the hope it will boost growth – has disappointed, not least because the recipe for such growth remains elusive. Moreover, poverty is now concentrated in places where growth is harder to achieve, and population size is rising fast. Africa; the Democratic Republic of Congo, Ethiopia and Nigeria alone account for a quarter of the total. If current poverty rates persist, rapid population growth means that these three could be home to more than two-fifths of the world's poorest by 2050. Will Malthus be vindicated after all?</p>\n<p>Not necessarily, because there is a simpler way to end destitution. Instead of turning Congo into China, it involves closing the gap between what people have and what they need to push them over the poverty line: if someone lives on $2 a day and the threshold is $3, they need $1 more. With perfect information, the cost of doing so would be strikingly low, and falling. Measured in today's dollars, it dropped from $330bn a year in 1990 to $90bn in 2023.</p>\n<p>Ending extreme poverty therefore comes down to identifying who needs what. A recent paper by Roshni Sahoo of Stanford University and co-authors propose... a machine-learning algorithm to assign transfer amounts – different for each person – so as to minimise the chance that anyone remains in poverty after receiving support... In other words, it targets the poverty gap, not the line itself, albeit less efficiently than would be possible with perfect information. The authors then used this framework to estimate the cost of (nearly) eliminating extreme poverty worldwide.</p>\n<p>The result is a surprisingly small bill. The paper's estimates suggest it would cost $318bn a year to reduce the global poverty rate to 1% at the $2.15-a-day line – roughly 0.3% of global GDP – with imperfect, real-world information. Even using the World Bank's newer $3-a-day threshold, the bill rises to only $466bn, or about 0.5% of global GDP. That is less than a third of what the world spends on alcohol each year, and well below what rich countries devote to farm subsidies.</p>\n\n<p>Which of the following represents the correct sequence of key ideas in the passage?</p>",
+      "options": {
+        "A": "Growth success – historical inevitability – technological targeting – regional concentration – affordability – direct transfers.",
+        "B": "Historical inevitability – growth success – regional concentration – direct transfers – algorithmic targeting – affordability.",
+        "C": "Regional concentration – historical inevitability – growth success – affordability – direct transfers – algorithmic targeting.",
+        "D": "Technological targeting – growth success – historical inevitability – affordability – regional concentration – direct transfers."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 16,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>A world free of poverty would once have sounded fanciful. For most of human history it was barely even imaginable. Around 1800, when more than eight in ten people were destitute, Thomas Malthus, a particularly dismal scientist, insisted it was an iron law that \"Some human beings must suffer from want....\" The idea that poverty could be eliminated scarcely appears in print before the mid-20th century. Even Jesus, in three of the Gospels, tells his followers that the poor will always be with them.</p>\n<p>At the turn of the last millennium, the world opted to try anyway. ...1.2bn people escaped penury in those 25 years, bringing the global poverty rate down from 43% to 13% (using today's poverty line). Economic growth did nearly all the work. A booming China accounted for about two-thirds of the decline, red-hot India and Indonesia did much of the rest. It looked as though growth miracles might consign poverty to the past.</p>\n<p>Miracles, however, are hard to repeat. Since 2015 the rate of poverty reduction has slowed sharply, to about a quarter of its previous pace. Roughly one in ten of the world's people, or 830m, are still destitute today. The old playbook – providing aid in the hope it will boost growth – has disappointed, not least because the recipe for such growth remains elusive. Moreover, poverty is now concentrated in places where growth is harder to achieve, and population size is rising fast. Africa; the Democratic Republic of Congo, Ethiopia and Nigeria alone account for a quarter of the total. If current poverty rates persist, rapid population growth means that these three could be home to more than two-fifths of the world's poorest by 2050. Will Malthus be vindicated after all?</p>\n<p>Not necessarily, because there is a simpler way to end destitution. Instead of turning Congo into China, it involves closing the gap between what people have and what they need to push them over the poverty line: if someone lives on $2 a day and the threshold is $3, they need $1 more. With perfect information, the cost of doing so would be strikingly low, and falling. Measured in today's dollars, it dropped from $330bn a year in 1990 to $90bn in 2023.</p>\n<p>Ending extreme poverty therefore comes down to identifying who needs what. A recent paper by Roshni Sahoo of Stanford University and co-authors propose... a machine-learning algorithm to assign transfer amounts – different for each person – so as to minimise the chance that anyone remains in poverty after receiving support... In other words, it targets the poverty gap, not the line itself, albeit less efficiently than would be possible with perfect information. The authors then used this framework to estimate the cost of (nearly) eliminating extreme poverty worldwide.</p>\n<p>The result is a surprisingly small bill. The paper's estimates suggest it would cost $318bn a year to reduce the global poverty rate to 1% at the $2.15-a-day line – roughly 0.3% of global GDP – with imperfect, real-world information. Even using the World Bank's newer $3-a-day threshold, the bill rises to only $466bn, or about 0.5% of global GDP. That is less than a third of what the world spends on alcohol each year, and well below what rich countries devote to farm subsidies.</p>\n\n<p>By asking whether Malthus will be vindicated, the author is primarily suggesting that:</p>",
+      "options": {
+        "A": "Persistent poverty and population growth may reinforce earlier pessimistic predictions.",
+        "B": "Economic growth will inevitably fail to reduce poverty in developing regions.",
+        "C": "Demographic expansion alone is sufficient to explain rising global poverty levels.",
+        "D": "Historical theories about scarcity remain universally applicable without modification."
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 17,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p><em>Humans seem to be deeply attracted to these armoured animals. The crab is a deep-dwelling symbol that emerges time and time again in stories scattered over centuries and continents. It is a monstrous reflection of our own minds, from whose claws we can pry vital insight into how our species navigates the boundaries of human and nonhuman, life and technology, the mapped familiar and the frightening (but beckoning) unknown.<br>But our long fascination is just the tip of the iceberg. In the past few centuries, human carcinisation has begun to speed up as our collective evolution increasingly mimics the deep-time transformation of crabs. Crab-like forms are evolutionarily beneficial: they are optimised for a demanding niche. But so are we. Consider how trade and communication 'carcinise' our squishy mammal interfaces, pixelating analogue reality into interoperable digital standards. Consider how local languages, currencies and cultures dissolve when pegged to global markets.</em></p>",
+      "options": {
+        "A": "The passage argues that the crab has historically symbolised humanity's fascination with unknown forms of life, and that modern technology is gradually transforming human evolution into a process resembling biological adaptation.",
+        "B": "The passage uses the crab as a symbol of humanity's engagement with the boundaries between life and technology, while arguing that contemporary digital trade and communication increasingly mirror the evolutionary logic of carcinisation.",
+        "C": "The passage argues that digital technologies are steadily replacing local cultures, proving that globalisation has become the principal force driving modern human evolution.",
+        "D": "The passage explains that the evolutionary success of crabs demonstrates why technological progress inevitably produces greater global cultural uniformity."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 18,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>The passage given below is followed by four alternate summaries. Choose the option that best captures the essence of the passage.</p><p><em>What are the connections between a banker working on a trading floor in London and a pastoralist herding animals across the grasslands of East Africa? More than you'd think. Let me explain how they're connected; and why they can both learn from each other. Both bankers and pastoralists must, as a matter of course, work with deep, pervasive uncertainty – where they don't know the probability of future events. Both often confront ignorance – where they don't know what they don't know. These conditions of making important decisions amid incertitude require a very distinct approach to navigating day-to-day practices, as well as long-term futures. Simple risk management is insufficient, as probabilities of events happening can't be calculated and outcomes are unknown. Instead, both must embrace flexibility and adaptive learning in confronting a turbulent world.</em></p>",
+      "options": {
+        "A": "Both bankers and pastoralists struggle with uncertainty in their respective fields – one in financial markets, the other in herding across grasslands. Despite operating in very different worlds, both can learn from each other's methods for confronting the unknown.",
+        "B": "In a world of pervasive uncertainty, both bankers and pastoralists must navigate risks and the unknown. Their approach to decision-making requires balancing short-term actions with long-term planning, often without knowing the probabilities of future events.",
+        "C": "Bankers and pastoralists both face pervasive uncertainty and ignorance – not knowing what they don't know – in their decision-making. This demands a distinct approach to both day-to-day and long-term decisions, as simple risk management alone is insufficient.",
+        "D": "Both bankers and pastoralists are familiar with uncertainty, but they differ in their ability to calculate probabilities. Since simple risk management fails both groups, they must each find independent ways to navigate a world of unknown outcomes."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 19,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "<p>Five jumbled sentences (labelled 1, 2, 3, 4, and 5), related to a topic, are given below. Four of them can be put together to form a coherent paragraph. Identify the odd sentence out and key in the number of that sentence as your answer.</p><p>(1) While recycling efforts are increasing, a large portion of plastic waste still ends up in landfills or the ocean, causing severe harm to marine life.<br>(2) Plastic pollution is one of the most pressing environmental issues, with millions of tons of plastic waste entering the oceans each year.<br>(3) Efforts to reduce plastic consumption have been gaining momentum, with governments and organizations implementing stricter regulations on plastic production.<br>(4) Single-use plastics like bottles, bags, and straws are the primary culprits, taking hundreds of years to decompose in the environment.<br>(5) Many companies are focusing on producing biodegradable plastics, hoping to mitigate the negative impact of plastics on the environment.</p>",
+      "options": null,
+      "correct_answer": "5",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 20,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "NAT",
+      "text": "<p>Five jumbled sentences (labelled 1, 2, 3, 4, and 5), related to a topic, are given below. Four of them can be put together to form a coherent paragraph. Identify the odd sentence out and key in the number of that sentence as your answer.</p><p>(1) AI is increasingly being used to enhance diagnostic accuracy, predict patient outcomes, and provide personalized treatment plans.<br>(2) The potential for AI to revolutionize healthcare is immense, from improving patient care to streamlining hospital management systems.<br>(3) Despite these advancements, the ethical implications of AI in healthcare, such as data privacy and algorithmic bias, remain a major concern.<br>(4) AI systems can analyze large datasets quickly and identify patterns that may not be obvious to human doctors, making them invaluable tools in healthcare.<br>(5) However, there are still challenges in integrating AI technologies into healthcare systems, including resistance from medical professionals and insufficient regulatory frameworks.</p>",
+      "options": null,
+      "correct_answer": "3",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 21,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>Unlike the trauma that follows a tragic accident, natural disaster or serious illness, relational trauma is a lasting emotional wound inflicted by someone close, often a parent or other caregiver. These wounds can stem from physical abuse, but also from repeated verbal abuse (such as calling a child 'worthless' or 'stupid'), or from repeatedly forcing a child to take care of their parent's emotional needs. Research connects early relational trauma with a greater risk of post-traumatic stress disorder (PTSD), depression and anxiety in adulthood. It can distort the way people see themselves, others and the world around them.</p>\n<p>For decades, talking about relational trauma mostly happened behind closed doors, with a psychotherapist. But with the rise of social media, millions of people have begun speaking openly about their childhood wounds, the scars left behind, and what those mean for their present and future. 'Don't let yourself become the same person who traumatised you,' one video on TikTok warns. In other words: don't repeat your parent's mistakes.</p>\n<p>Healing trauma at its root requires some understanding of the scars, and without this awareness, there's a risk that trauma will pass down from generation to generation. The mistreatment a person faced as a child and the harm it caused can lead to behaviours that have adverse effects on one's own children. As numerous psychoanalysts have argued, we repeat what we know, even when what we know was excruciating.</p>\n<p>To resist this legacy, a whole social movement has found a phrase of its own: 'cycle-breaking'. The term has become trendy on social media, and it's often peppered into conversations about childhood trauma and mental health. Therapy influencers such as the psychotherapist Amanda Smith and the writer and musician Orenda Fink use it to describe how survivors heal and break free from past narcissistic and emotional mistreatment. In my experience as a therapist, however, not everyone knows what this buzzword means in practice.</p>\n<p>Cycle-breaking isn't only about ending physical or verbal abuse. It can mean managing a whole range of potentially harmful behaviours that sometimes travel along with past trauma – including reacting defensively, struggling with intimacy, raging out, using too many substances, self-blame or people-pleasing. Cycle-breaking requires someone affected by abuse to do the 'deep work of [their] own trauma healing', the psychologist Ingrid Clayton tells me. As a therapist, I've seen this in my work with patients, too. Just like dealing with grief, cycle-breaking is a complex, individual journey.</p>\n\n<p>What can most reasonably be inferred from the statement 'we repeat what we know, even when what we know was excruciating'?</p>",
+      "options": {
+        "A": "Trauma survivors are consciously aware of repeating harmful patterns but feel psychologically powerless to interrupt them.",
+        "B": "Excruciating experiences leave deeper neurological imprints than moderate trauma, making repetition more likely.",
+        "C": "The intensity of childhood suffering directly determines the severity of dysfunctional behaviours in adulthood.",
+        "D": "Familiarity with a behaviour, however painful its origins, can make it feel normative enough to be unconsciously reproduced."
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 22,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>Unlike the trauma that follows a tragic accident, natural disaster or serious illness, relational trauma is a lasting emotional wound inflicted by someone close, often a parent or other caregiver. These wounds can stem from physical abuse, but also from repeated verbal abuse (such as calling a child 'worthless' or 'stupid'), or from repeatedly forcing a child to take care of their parent's emotional needs. Research connects early relational trauma with a greater risk of post-traumatic stress disorder (PTSD), depression and anxiety in adulthood. It can distort the way people see themselves, others and the world around them.</p>\n<p>For decades, talking about relational trauma mostly happened behind closed doors, with a psychotherapist. But with the rise of social media, millions of people have begun speaking openly about their childhood wounds, the scars left behind, and what those mean for their present and future. 'Don't let yourself become the same person who traumatised you,' one video on TikTok warns. In other words: don't repeat your parent's mistakes.</p>\n<p>Healing trauma at its root requires some understanding of the scars, and without this awareness, there's a risk that trauma will pass down from generation to generation. The mistreatment a person faced as a child and the harm it caused can lead to behaviours that have adverse effects on one's own children. As numerous psychoanalysts have argued, we repeat what we know, even when what we know was excruciating.</p>\n<p>To resist this legacy, a whole social movement has found a phrase of its own: 'cycle-breaking'. The term has become trendy on social media, and it's often peppered into conversations about childhood trauma and mental health. Therapy influencers such as the psychotherapist Amanda Smith and the writer and musician Orenda Fink use it to describe how survivors heal and break free from past narcissistic and emotional mistreatment. In my experience as a therapist, however, not everyone knows what this buzzword means in practice.</p>\n<p>Cycle-breaking isn't only about ending physical or verbal abuse. It can mean managing a whole range of potentially harmful behaviours that sometimes travel along with past trauma – including reacting defensively, struggling with intimacy, raging out, using too many substances, self-blame or people-pleasing. Cycle-breaking requires someone affected by abuse to do the 'deep work of [their] own trauma healing', the psychologist Ingrid Clayton tells me. As a therapist, I've seen this in my work with patients, too. Just like dealing with grief, cycle-breaking is a complex, individual journey.</p>\n\n<p>Which of the following best captures the central argument of the passage?</p>",
+      "options": {
+        "A": "Relational trauma, rooted in early caregiving relationships, perpetuates across generations unless survivors undertake sustained and conscious inner work.",
+        "B": "The rise of therapy speak on social media, while raising awareness of relational trauma, risks diluting the clinical rigour needed for genuine healing.",
+        "C": "Cycle-breaking is a clinically valid but socially misappropriated concept that therapists must rescue from the oversimplifications of influencer culture.",
+        "D": "Unlike trauma caused by external events, relational trauma uniquely distorts identity and requires a fundamentally different therapeutic approach."
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 23,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>Unlike the trauma that follows a tragic accident, natural disaster or serious illness, relational trauma is a lasting emotional wound inflicted by someone close, often a parent or other caregiver. These wounds can stem from physical abuse, but also from repeated verbal abuse (such as calling a child 'worthless' or 'stupid'), or from repeatedly forcing a child to take care of their parent's emotional needs. Research connects early relational trauma with a greater risk of post-traumatic stress disorder (PTSD), depression and anxiety in adulthood. It can distort the way people see themselves, others and the world around them.</p>\n<p>For decades, talking about relational trauma mostly happened behind closed doors, with a psychotherapist. But with the rise of social media, millions of people have begun speaking openly about their childhood wounds, the scars left behind, and what those mean for their present and future. 'Don't let yourself become the same person who traumatised you,' one video on TikTok warns. In other words: don't repeat your parent's mistakes.</p>\n<p>Healing trauma at its root requires some understanding of the scars, and without this awareness, there's a risk that trauma will pass down from generation to generation. The mistreatment a person faced as a child and the harm it caused can lead to behaviours that have adverse effects on one's own children. As numerous psychoanalysts have argued, we repeat what we know, even when what we know was excruciating.</p>\n<p>To resist this legacy, a whole social movement has found a phrase of its own: 'cycle-breaking'. The term has become trendy on social media, and it's often peppered into conversations about childhood trauma and mental health. Therapy influencers such as the psychotherapist Amanda Smith and the writer and musician Orenda Fink use it to describe how survivors heal and break free from past narcissistic and emotional mistreatment. In my experience as a therapist, however, not everyone knows what this buzzword means in practice.</p>\n<p>Cycle-breaking isn't only about ending physical or verbal abuse. It can mean managing a whole range of potentially harmful behaviours that sometimes travel along with past trauma – including reacting defensively, struggling with intimacy, raging out, using too many substances, self-blame or people-pleasing. Cycle-breaking requires someone affected by abuse to do the 'deep work of [their] own trauma healing', the psychologist Ingrid Clayton tells me. As a therapist, I've seen this in my work with patients, too. Just like dealing with grief, cycle-breaking is a complex, individual journey.</p>\n\n<p>The author refers to TikTok and therapy influencers primarily to:</p>",
+      "options": {
+        "A": "Critique the commercialisation of psychological concepts by social media personalities lacking clinical credentials.",
+        "B": "Acknowledge that public discourse around relational trauma has expanded beyond the therapist's office, though not always with sufficient depth.",
+        "C": "Contrast the superficiality of social media engagement with the rigorous self-examination that genuine cycle-breaking demands.",
+        "D": "Illustrate that cycle-breaking has achieved mainstream cultural legitimacy, making professional therapy increasingly redundant."
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 24,
+      "section": "Verbal Ability & Reading Comprehension",
+      "type": "MCQ",
+      "text": "<p>Unlike the trauma that follows a tragic accident, natural disaster or serious illness, relational trauma is a lasting emotional wound inflicted by someone close, often a parent or other caregiver. These wounds can stem from physical abuse, but also from repeated verbal abuse (such as calling a child 'worthless' or 'stupid'), or from repeatedly forcing a child to take care of their parent's emotional needs. Research connects early relational trauma with a greater risk of post-traumatic stress disorder (PTSD), depression and anxiety in adulthood. It can distort the way people see themselves, others and the world around them.</p>\n<p>For decades, talking about relational trauma mostly happened behind closed doors, with a psychotherapist. But with the rise of social media, millions of people have begun speaking openly about their childhood wounds, the scars left behind, and what those mean for their present and future. 'Don't let yourself become the same person who traumatised you,' one video on TikTok warns. In other words: don't repeat your parent's mistakes.</p>\n<p>Healing trauma at its root requires some understanding of the scars, and without this awareness, there's a risk that trauma will pass down from generation to generation. The mistreatment a person faced as a child and the harm it caused can lead to behaviours that have adverse effects on one's own children. As numerous psychoanalysts have argued, we repeat what we know, even when what we know was excruciating.</p>\n<p>To resist this legacy, a whole social movement has found a phrase of its own: 'cycle-breaking'. The term has become trendy on social media, and it's often peppered into conversations about childhood trauma and mental health. Therapy influencers such as the psychotherapist Amanda Smith and the writer and musician Orenda Fink use it to describe how survivors heal and break free from past narcissistic and emotional mistreatment. In my experience as a therapist, however, not everyone knows what this buzzword means in practice.</p>\n<p>Cycle-breaking isn't only about ending physical or verbal abuse. It can mean managing a whole range of potentially harmful behaviours that sometimes travel along with past trauma – including reacting defensively, struggling with intimacy, raging out, using too many substances, self-blame or people-pleasing. Cycle-breaking requires someone affected by abuse to do the 'deep work of [their] own trauma healing', the psychologist Ingrid Clayton tells me. As a therapist, I've seen this in my work with patients, too. Just like dealing with grief, cycle-breaking is a complex, individual journey.</p>\n\n<p>The author's claim that cycle-breaking extends beyond ending abuse to managing behaviours like 'raging out, people-pleasing and self-blame' rests on which underlying assumption?</p>",
+      "options": {
+        "A": "Trauma-driven behavioural patterns are too deeply embedded to be addressed without the intervention of a licensed therapist.",
+        "B": "Harmful behaviours such as people-pleasing and self-blame are invariably rooted in relational trauma rather than other psychological causes.",
+        "C": "Addressing only the most visible forms of abuse while leaving associated behavioural patterns unexamined leaves the cycle of dysfunction intact.",
+        "D": "Social media discussions of cycle-breaking focus disproportionately on dramatic abuse while ignoring subtler trauma-driven behaviours."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 25,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 25 to 28:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A civil contractor has hired six specialists – Aditya, Bhanu, Chirag, Darsh, Ekansh, and Farhan – to complete an urgent project consisting of three technical tasks: Frontend, Backend, and Testing. The project must be completed in exactly five hours. The three tasks are of equal difficulty, and each specialist works for at least one hour with the same efficiency on every task for which they are qualified. Each specialist works for an integral number of hours. The project duration is divided into five one-hour time slots. During each time slot, each task is assigned to exactly one specialist.</p>\n<p>A work schedule is prepared subject to the following condition:</p>\n<ul>\n<li>Each specialist works for at least 2 hours and at most 3 hours.</li>\n</ul>\n<p>The following additional information is known:</p>\n<ol type=\"i\">\n<li>Aditya can work only on Frontend, whereas Farhan can work only on Backend.</li>\n<li>Bhanu and Chirag can work on Frontend and Testing, but not on Backend.</li>\n<li>Darsh can work on Frontend and Backend, but not on Testing, whereas Ekansh can work on Backend and Testing, but not on Frontend.</li>\n<li>Working alone, Aditya, Bhanu, and Chirag can complete any one of the three tasks in 8 hours, 4 hours, and 6 hours, respectively.</li>\n<li>Aditya works only during the first and fifth hours. Bhanu and Chirag each work for three consecutive hours, whereas Darsh works for two consecutive hours. Ekansh and Farhan do not work in consecutive hours.</li>\n</ol>\n\n<p>Which of the following specialists cannot be working during the second hour?</p>",
+      "options": {
+        "A": "Farhan",
+        "B": "Darsh",
+        "C": "Bhanu",
+        "D": "Ekansh"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 26,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 25 to 28:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A civil contractor has hired six specialists – Aditya, Bhanu, Chirag, Darsh, Ekansh, and Farhan – to complete an urgent project consisting of three technical tasks: Frontend, Backend, and Testing. The project must be completed in exactly five hours. The three tasks are of equal difficulty, and each specialist works for at least one hour with the same efficiency on every task for which they are qualified. Each specialist works for an integral number of hours. The project duration is divided into five one-hour time slots. During each time slot, each task is assigned to exactly one specialist.</p>\n<p>A work schedule is prepared subject to the following condition:</p>\n<ul>\n<li>Each specialist works for at least 2 hours and at most 3 hours.</li>\n</ul>\n<p>The following additional information is known:</p>\n<ol type=\"i\">\n<li>Aditya can work only on Frontend, whereas Farhan can work only on Backend.</li>\n<li>Bhanu and Chirag can work on Frontend and Testing, but not on Backend.</li>\n<li>Darsh can work on Frontend and Backend, but not on Testing, whereas Ekansh can work on Backend and Testing, but not on Frontend.</li>\n<li>Working alone, Aditya, Bhanu, and Chirag can complete any one of the three tasks in 8 hours, 4 hours, and 6 hours, respectively.</li>\n<li>Aditya works only during the first and fifth hours. Bhanu and Chirag each work for three consecutive hours, whereas Darsh works for two consecutive hours. Ekansh and Farhan do not work in consecutive hours.</li>\n</ol>\n\n<p>If Farhan works alone, in how many hours can he complete any one of the three tasks?</p>",
+      "options": null,
+      "correct_answer": "6",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 27,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 25 to 28:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A civil contractor has hired six specialists – Aditya, Bhanu, Chirag, Darsh, Ekansh, and Farhan – to complete an urgent project consisting of three technical tasks: Frontend, Backend, and Testing. The project must be completed in exactly five hours. The three tasks are of equal difficulty, and each specialist works for at least one hour with the same efficiency on every task for which they are qualified. Each specialist works for an integral number of hours. The project duration is divided into five one-hour time slots. During each time slot, each task is assigned to exactly one specialist.</p>\n<p>A work schedule is prepared subject to the following condition:</p>\n<ul>\n<li>Each specialist works for at least 2 hours and at most 3 hours.</li>\n</ul>\n<p>The following additional information is known:</p>\n<ol type=\"i\">\n<li>Aditya can work only on Frontend, whereas Farhan can work only on Backend.</li>\n<li>Bhanu and Chirag can work on Frontend and Testing, but not on Backend.</li>\n<li>Darsh can work on Frontend and Backend, but not on Testing, whereas Ekansh can work on Backend and Testing, but not on Frontend.</li>\n<li>Working alone, Aditya, Bhanu, and Chirag can complete any one of the three tasks in 8 hours, 4 hours, and 6 hours, respectively.</li>\n<li>Aditya works only during the first and fifth hours. Bhanu and Chirag each work for three consecutive hours, whereas Darsh works for two consecutive hours. Ekansh and Farhan do not work in consecutive hours.</li>\n</ol>\n\n<p>Which of the following correctly ranks the specialists in decreasing order of efficiency?</p>",
+      "options": {
+        "A": "Farhan &gt; Bhanu &gt; Chirag",
+        "B": "Darsh &gt; Farhan &gt; Ekansh",
+        "C": "Farhan &gt; Darsh &gt; Aditya",
+        "D": "Darsh &gt; Bhanu &gt; Farhan"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 28,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 25 to 28:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A civil contractor has hired six specialists – Aditya, Bhanu, Chirag, Darsh, Ekansh, and Farhan – to complete an urgent project consisting of three technical tasks: Frontend, Backend, and Testing. The project must be completed in exactly five hours. The three tasks are of equal difficulty, and each specialist works for at least one hour with the same efficiency on every task for which they are qualified. Each specialist works for an integral number of hours. The project duration is divided into five one-hour time slots. During each time slot, each task is assigned to exactly one specialist.</p>\n<p>A work schedule is prepared subject to the following condition:</p>\n<ul>\n<li>Each specialist works for at least 2 hours and at most 3 hours.</li>\n</ul>\n<p>The following additional information is known:</p>\n<ol type=\"i\">\n<li>Aditya can work only on Frontend, whereas Farhan can work only on Backend.</li>\n<li>Bhanu and Chirag can work on Frontend and Testing, but not on Backend.</li>\n<li>Darsh can work on Frontend and Backend, but not on Testing, whereas Ekansh can work on Backend and Testing, but not on Frontend.</li>\n<li>Working alone, Aditya, Bhanu, and Chirag can complete any one of the three tasks in 8 hours, 4 hours, and 6 hours, respectively.</li>\n<li>Aditya works only during the first and fifth hours. Bhanu and Chirag each work for three consecutive hours, whereas Darsh works for two consecutive hours. Ekansh and Farhan do not work in consecutive hours.</li>\n</ol>\n\n<p>Which of the following statements is/are true regarding the work schedule?</p><p>I. Darsh worked during the third and fourth hours.<br>II. Bhanu and Chirag worked together for two consecutive hours.<br>III. Farhan and Aditya did not work together during any hour.</p>",
+      "options": {
+        "A": "I &amp; II only",
+        "B": "II &amp; III only",
+        "C": "I &amp; III only",
+        "D": "All of them"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 29,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 29 to 33:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Rajgarh had six villages – Amrit, Behlana, Chandpur, Devgarh, Eklavya, and Firozpur. Each village started paying wheat-tax to the kingdom in some year and stopped a few years later (after being merged into a neighbouring province). Each village paid 2 quintals of wheat as tax in its first and last year of payment. The amount of wheat paid each year increased until it reached a maximum, and then decreased until payments stopped. No village paid the same amount of wheat in two consecutive years. Each annual increase and decrease was either by 2 quintals or by 4 quintals. The table below provides partial information about the six villages:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Village</th>\n<th>First Year</th>\n<th>Last Year</th>\n<th>Total Wheat Tax (in quintals)</th>\n</tr>\n</thead>\n<tbody>\n<tr><td>Amrit</td><td>1750</td><td>1757</td><td>42</td></tr>\n<tr><td>Behlana</td><td>1753</td><td>1756</td><td>–</td></tr>\n<tr><td>Chandpur</td><td>1754</td><td>–</td><td>18</td></tr>\n<tr><td>Devgarh</td><td>1752</td><td>1756</td><td>20</td></tr>\n<tr><td>Eklavya</td><td>1751</td><td>–</td><td>26</td></tr>\n<tr><td>Firozpur</td><td>1758</td><td>1761</td><td>–</td></tr>\n</tbody>\n</table>\n</div>\n\n<p>What best can be concluded about the total quantity of wheat paid (in quintals) by all six villages in 1756?</p>",
+      "options": {
+        "A": "16",
+        "B": "14, 16 or 18",
+        "C": "14 or 16",
+        "D": "16 or 18"
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 30,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 29 to 33:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Rajgarh had six villages – Amrit, Behlana, Chandpur, Devgarh, Eklavya, and Firozpur. Each village started paying wheat-tax to the kingdom in some year and stopped a few years later (after being merged into a neighbouring province). Each village paid 2 quintals of wheat as tax in its first and last year of payment. The amount of wheat paid each year increased until it reached a maximum, and then decreased until payments stopped. No village paid the same amount of wheat in two consecutive years. Each annual increase and decrease was either by 2 quintals or by 4 quintals. The table below provides partial information about the six villages:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Village</th>\n<th>First Year</th>\n<th>Last Year</th>\n<th>Total Wheat Tax (in quintals)</th>\n</tr>\n</thead>\n<tbody>\n<tr><td>Amrit</td><td>1750</td><td>1757</td><td>42</td></tr>\n<tr><td>Behlana</td><td>1753</td><td>1756</td><td>–</td></tr>\n<tr><td>Chandpur</td><td>1754</td><td>–</td><td>18</td></tr>\n<tr><td>Devgarh</td><td>1752</td><td>1756</td><td>20</td></tr>\n<tr><td>Eklavya</td><td>1751</td><td>–</td><td>26</td></tr>\n<tr><td>Firozpur</td><td>1758</td><td>1761</td><td>–</td></tr>\n</tbody>\n</table>\n</div>\n\n<p>Which of the following statement(s) is/are definitely true?</p><p>I. The maximum quantity of wheat paid by Eklavya in any year was 10 quintals.<br>II. Eklavya's payments stopped in 1756.</p>",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I &amp; II",
+        "D": "Neither I nor II"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 31,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 29 to 33:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Rajgarh had six villages – Amrit, Behlana, Chandpur, Devgarh, Eklavya, and Firozpur. Each village started paying wheat-tax to the kingdom in some year and stopped a few years later (after being merged into a neighbouring province). Each village paid 2 quintals of wheat as tax in its first and last year of payment. The amount of wheat paid each year increased until it reached a maximum, and then decreased until payments stopped. No village paid the same amount of wheat in two consecutive years. Each annual increase and decrease was either by 2 quintals or by 4 quintals. The table below provides partial information about the six villages:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Village</th>\n<th>First Year</th>\n<th>Last Year</th>\n<th>Total Wheat Tax (in quintals)</th>\n</tr>\n</thead>\n<tbody>\n<tr><td>Amrit</td><td>1750</td><td>1757</td><td>42</td></tr>\n<tr><td>Behlana</td><td>1753</td><td>1756</td><td>–</td></tr>\n<tr><td>Chandpur</td><td>1754</td><td>–</td><td>18</td></tr>\n<tr><td>Devgarh</td><td>1752</td><td>1756</td><td>20</td></tr>\n<tr><td>Eklavya</td><td>1751</td><td>–</td><td>26</td></tr>\n<tr><td>Firozpur</td><td>1758</td><td>1761</td><td>–</td></tr>\n</tbody>\n</table>\n</div>\n\n<p>If Eklavya paid 6 quintals of wheat in 1754, then what is the smallest possible total wheat (in quintals) that could have been paid by all the six villages in 1753?</p>",
+      "options": null,
+      "correct_answer": "22",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 32,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 29 to 33:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Rajgarh had six villages – Amrit, Behlana, Chandpur, Devgarh, Eklavya, and Firozpur. Each village started paying wheat-tax to the kingdom in some year and stopped a few years later (after being merged into a neighbouring province). Each village paid 2 quintals of wheat as tax in its first and last year of payment. The amount of wheat paid each year increased until it reached a maximum, and then decreased until payments stopped. No village paid the same amount of wheat in two consecutive years. Each annual increase and decrease was either by 2 quintals or by 4 quintals. The table below provides partial information about the six villages:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Village</th>\n<th>First Year</th>\n<th>Last Year</th>\n<th>Total Wheat Tax (in quintals)</th>\n</tr>\n</thead>\n<tbody>\n<tr><td>Amrit</td><td>1750</td><td>1757</td><td>42</td></tr>\n<tr><td>Behlana</td><td>1753</td><td>1756</td><td>–</td></tr>\n<tr><td>Chandpur</td><td>1754</td><td>–</td><td>18</td></tr>\n<tr><td>Devgarh</td><td>1752</td><td>1756</td><td>20</td></tr>\n<tr><td>Eklavya</td><td>1751</td><td>–</td><td>26</td></tr>\n<tr><td>Firozpur</td><td>1758</td><td>1761</td><td>–</td></tr>\n</tbody>\n</table>\n</div>\n\n<p>If the total wheat paid by all six villages in 1755 is 24 quintals, then which of the following is not possible?</p>",
+      "options": {
+        "A": "Behlana paid the same amount of wheat as Eklavya in 1754.",
+        "B": "Amrit paid the same amount of wheat as Devgarh in 1754.",
+        "C": "Amrit paid the same amount of wheat as Behlana in 1755.",
+        "D": "Behlana paid more wheat than Eklavya in 1755."
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 33,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 29 to 33:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Rajgarh had six villages – Amrit, Behlana, Chandpur, Devgarh, Eklavya, and Firozpur. Each village started paying wheat-tax to the kingdom in some year and stopped a few years later (after being merged into a neighbouring province). Each village paid 2 quintals of wheat as tax in its first and last year of payment. The amount of wheat paid each year increased until it reached a maximum, and then decreased until payments stopped. No village paid the same amount of wheat in two consecutive years. Each annual increase and decrease was either by 2 quintals or by 4 quintals. The table below provides partial information about the six villages:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Village</th>\n<th>First Year</th>\n<th>Last Year</th>\n<th>Total Wheat Tax (in quintals)</th>\n</tr>\n</thead>\n<tbody>\n<tr><td>Amrit</td><td>1750</td><td>1757</td><td>42</td></tr>\n<tr><td>Behlana</td><td>1753</td><td>1756</td><td>–</td></tr>\n<tr><td>Chandpur</td><td>1754</td><td>–</td><td>18</td></tr>\n<tr><td>Devgarh</td><td>1752</td><td>1756</td><td>20</td></tr>\n<tr><td>Eklavya</td><td>1751</td><td>–</td><td>26</td></tr>\n<tr><td>Firozpur</td><td>1758</td><td>1761</td><td>–</td></tr>\n</tbody>\n</table>\n</div>\n\n<p>What is the maximum possible number of villages that could have reached their highest annual wheat payment in the same year?</p>",
+      "options": null,
+      "correct_answer": "4",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 34,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 34 to 38:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five student mentors namely Aman, Bhaskar, Charan, Deepak, and Ehsaan are seated in a single linear row of five adjacent chairs, numbered 1 to 5 from left to right. Each mentor leads across three distinct subjects: Quantitative Aptitude (QA), Verbal Ability (VA), and Data Interpretation (DI).</p>\n<p>The total number of booklets distributed by any individual mentor is not fixed, but the following rules govern their distribution:</p>\n<ul>\n<li>Every mentor distributes a distinct, positive integer number of booklets for each of the three subjects. No subject is left with zero booklets by any mentor.</li>\n<li>For each individual mentor, their booklet counts across the three subjects are completely distinct.</li>\n<li>The \"Base Cost\" to print a booklet is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI.</li>\n</ul>\n<p>The total printing expenditure incurred by each of the five mentors is given in the table below:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Mentor</th>\n<th>Aman</th>\n<th>Bhaskar</th>\n<th>Charan</th>\n<th>Deepak</th>\n<th>Ehsaan</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Total Expenditure (in Rs.)</strong></td>\n<td>300</td>\n<td>360</td>\n<td>550</td>\n<td>620</td>\n<td>600</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>Further information known to us:</p>\n<ol type=\"i\">\n<li>No mentor distributed more than 20 booklets in total and more than 10 booklets of any subject. Total DI booklets distributed were 25.</li>\n<li>The mentor whose total number of distributed booklets is highest sits in chair 5. The mentor who distributed the lowest number of DI booklets sits in chair 1. The mentor who distributed the highest number of VA booklets sits in chair 4.</li>\n<li>Bhaskar and the mentor sitting to the immediate right of Bhaskar distributed a total of 11 VA booklets.</li>\n<li>Charan, who distributed 2 QA booklets, sits to the immediate left of the mentor who distributed 5 QA booklets and 2 VA booklets.</li>\n</ol>\n\n<p>Who is sitting in Chair 4?</p>",
+      "options": {
+        "A": "Ehsaan",
+        "B": "Bhaskar",
+        "C": "Either Ehsaan or Bhaskar",
+        "D": "Either Ehsaan or Deepak"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 35,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 34 to 38:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five student mentors namely Aman, Bhaskar, Charan, Deepak, and Ehsaan are seated in a single linear row of five adjacent chairs, numbered 1 to 5 from left to right. Each mentor leads across three distinct subjects: Quantitative Aptitude (QA), Verbal Ability (VA), and Data Interpretation (DI).</p>\n<p>The total number of booklets distributed by any individual mentor is not fixed, but the following rules govern their distribution:</p>\n<ul>\n<li>Every mentor distributes a distinct, positive integer number of booklets for each of the three subjects. No subject is left with zero booklets by any mentor.</li>\n<li>For each individual mentor, their booklet counts across the three subjects are completely distinct.</li>\n<li>The \"Base Cost\" to print a booklet is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI.</li>\n</ul>\n<p>The total printing expenditure incurred by each of the five mentors is given in the table below:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Mentor</th>\n<th>Aman</th>\n<th>Bhaskar</th>\n<th>Charan</th>\n<th>Deepak</th>\n<th>Ehsaan</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Total Expenditure (in Rs.)</strong></td>\n<td>300</td>\n<td>360</td>\n<td>550</td>\n<td>620</td>\n<td>600</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>Further information known to us:</p>\n<ol type=\"i\">\n<li>No mentor distributed more than 20 booklets in total and more than 10 booklets of any subject. Total DI booklets distributed were 25.</li>\n<li>The mentor whose total number of distributed booklets is highest sits in chair 5. The mentor who distributed the lowest number of DI booklets sits in chair 1. The mentor who distributed the highest number of VA booklets sits in chair 4.</li>\n<li>Bhaskar and the mentor sitting to the immediate right of Bhaskar distributed a total of 11 VA booklets.</li>\n<li>Charan, who distributed 2 QA booklets, sits to the immediate left of the mentor who distributed 5 QA booklets and 2 VA booklets.</li>\n</ol>\n\n<p>What is the total number of booklets distributed by Bhaskar across all three subjects?</p>",
+      "options": null,
+      "correct_answer": "11",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 36,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 34 to 38:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five student mentors namely Aman, Bhaskar, Charan, Deepak, and Ehsaan are seated in a single linear row of five adjacent chairs, numbered 1 to 5 from left to right. Each mentor leads across three distinct subjects: Quantitative Aptitude (QA), Verbal Ability (VA), and Data Interpretation (DI).</p>\n<p>The total number of booklets distributed by any individual mentor is not fixed, but the following rules govern their distribution:</p>\n<ul>\n<li>Every mentor distributes a distinct, positive integer number of booklets for each of the three subjects. No subject is left with zero booklets by any mentor.</li>\n<li>For each individual mentor, their booklet counts across the three subjects are completely distinct.</li>\n<li>The \"Base Cost\" to print a booklet is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI.</li>\n</ul>\n<p>The total printing expenditure incurred by each of the five mentors is given in the table below:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Mentor</th>\n<th>Aman</th>\n<th>Bhaskar</th>\n<th>Charan</th>\n<th>Deepak</th>\n<th>Ehsaan</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Total Expenditure (in Rs.)</strong></td>\n<td>300</td>\n<td>360</td>\n<td>550</td>\n<td>620</td>\n<td>600</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>Further information known to us:</p>\n<ol type=\"i\">\n<li>No mentor distributed more than 20 booklets in total and more than 10 booklets of any subject. Total DI booklets distributed were 25.</li>\n<li>The mentor whose total number of distributed booklets is highest sits in chair 5. The mentor who distributed the lowest number of DI booklets sits in chair 1. The mentor who distributed the highest number of VA booklets sits in chair 4.</li>\n<li>Bhaskar and the mentor sitting to the immediate right of Bhaskar distributed a total of 11 VA booklets.</li>\n<li>Charan, who distributed 2 QA booklets, sits to the immediate left of the mentor who distributed 5 QA booklets and 2 VA booklets.</li>\n</ol>\n\n<p>What is the absolute difference between the number of QA booklets distributed by the mentor in Chair 1 and the mentor in Chair 5?</p>",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 37,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 34 to 38:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five student mentors namely Aman, Bhaskar, Charan, Deepak, and Ehsaan are seated in a single linear row of five adjacent chairs, numbered 1 to 5 from left to right. Each mentor leads across three distinct subjects: Quantitative Aptitude (QA), Verbal Ability (VA), and Data Interpretation (DI).</p>\n<p>The total number of booklets distributed by any individual mentor is not fixed, but the following rules govern their distribution:</p>\n<ul>\n<li>Every mentor distributes a distinct, positive integer number of booklets for each of the three subjects. No subject is left with zero booklets by any mentor.</li>\n<li>For each individual mentor, their booklet counts across the three subjects are completely distinct.</li>\n<li>The \"Base Cost\" to print a booklet is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI.</li>\n</ul>\n<p>The total printing expenditure incurred by each of the five mentors is given in the table below:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Mentor</th>\n<th>Aman</th>\n<th>Bhaskar</th>\n<th>Charan</th>\n<th>Deepak</th>\n<th>Ehsaan</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Total Expenditure (in Rs.)</strong></td>\n<td>300</td>\n<td>360</td>\n<td>550</td>\n<td>620</td>\n<td>600</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>Further information known to us:</p>\n<ol type=\"i\">\n<li>No mentor distributed more than 20 booklets in total and more than 10 booklets of any subject. Total DI booklets distributed were 25.</li>\n<li>The mentor whose total number of distributed booklets is highest sits in chair 5. The mentor who distributed the lowest number of DI booklets sits in chair 1. The mentor who distributed the highest number of VA booklets sits in chair 4.</li>\n<li>Bhaskar and the mentor sitting to the immediate right of Bhaskar distributed a total of 11 VA booklets.</li>\n<li>Charan, who distributed 2 QA booklets, sits to the immediate left of the mentor who distributed 5 QA booklets and 2 VA booklets.</li>\n</ol>\n\n<p>Total how many VA booklets are distributed by all 5 mentors?</p>",
+      "options": null,
+      "correct_answer": "22",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 38,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 34 to 38:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five student mentors namely Aman, Bhaskar, Charan, Deepak, and Ehsaan are seated in a single linear row of five adjacent chairs, numbered 1 to 5 from left to right. Each mentor leads across three distinct subjects: Quantitative Aptitude (QA), Verbal Ability (VA), and Data Interpretation (DI).</p>\n<p>The total number of booklets distributed by any individual mentor is not fixed, but the following rules govern their distribution:</p>\n<ul>\n<li>Every mentor distributes a distinct, positive integer number of booklets for each of the three subjects. No subject is left with zero booklets by any mentor.</li>\n<li>For each individual mentor, their booklet counts across the three subjects are completely distinct.</li>\n<li>The \"Base Cost\" to print a booklet is Rs. 20 for QA, Rs. 30 for VA, and Rs. 50 for DI.</li>\n</ul>\n<p>The total printing expenditure incurred by each of the five mentors is given in the table below:</p>\n<div class=\"table-responsive\">\n<table class=\"data-table\">\n<thead>\n<tr>\n<th>Mentor</th>\n<th>Aman</th>\n<th>Bhaskar</th>\n<th>Charan</th>\n<th>Deepak</th>\n<th>Ehsaan</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Total Expenditure (in Rs.)</strong></td>\n<td>300</td>\n<td>360</td>\n<td>550</td>\n<td>620</td>\n<td>600</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>Further information known to us:</p>\n<ol type=\"i\">\n<li>No mentor distributed more than 20 booklets in total and more than 10 booklets of any subject. Total DI booklets distributed were 25.</li>\n<li>The mentor whose total number of distributed booklets is highest sits in chair 5. The mentor who distributed the lowest number of DI booklets sits in chair 1. The mentor who distributed the highest number of VA booklets sits in chair 4.</li>\n<li>Bhaskar and the mentor sitting to the immediate right of Bhaskar distributed a total of 11 VA booklets.</li>\n<li>Charan, who distributed 2 QA booklets, sits to the immediate left of the mentor who distributed 5 QA booklets and 2 VA booklets.</li>\n</ol>\n\n<p>Which of the following statements is TRUE?</p>",
+      "options": {
+        "A": "Charan sits in Chair 3.",
+        "B": "Deepak distributed more VA booklets than Charan.",
+        "C": "The mentor in Chair 2 distributed a total of 14 booklets.",
+        "D": "Aman distributed exactly 3 DI booklets."
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 39,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 39 to 42:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five security software researchers – Ananya, Bashir, Cathy, Dinesh, and Esha – participated in a two-stage bug-hunting competition. The first stage was conducted on Server-Alpha, and the second on Server-Beta. A total of 600 bugs were identified across the two servers.</p>\n<p>The following observations were made:</p>\n<ol type=\"i\">\n<li>The total number of bugs identified across both servers by Ananya was equal to that identified by Cathy.</li>\n<li>The highest number of bugs identified by any researcher on Server-Beta was 5.5 times the lowest number of bugs identified by any researcher on Server-Alpha.</li>\n<li>The numbers of bugs identified on Server-Alpha, when arranged in ascending order, form an arithmetic progression with a common difference of 15, whereas the corresponding numbers on Server-Beta, when arranged in descending order, form an arithmetic progression with a common difference of 20.</li>\n<li>Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh identified the median number of bugs on both servers.</li>\n<li>Researchers received an incentive of Rs. 900 for every 5 bugs identified on Server-Alpha and Rs. 1,200 for every 10 bugs identified on Server-Beta.</li>\n</ol>\n\n<p>What is the maximum possible difference between the numbers of bugs identified by a researcher on the two servers?</p>",
+      "options": null,
+      "correct_answer": "90",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 40,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 39 to 42:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five security software researchers – Ananya, Bashir, Cathy, Dinesh, and Esha – participated in a two-stage bug-hunting competition. The first stage was conducted on Server-Alpha, and the second on Server-Beta. A total of 600 bugs were identified across the two servers.</p>\n<p>The following observations were made:</p>\n<ol type=\"i\">\n<li>The total number of bugs identified across both servers by Ananya was equal to that identified by Cathy.</li>\n<li>The highest number of bugs identified by any researcher on Server-Beta was 5.5 times the lowest number of bugs identified by any researcher on Server-Alpha.</li>\n<li>The numbers of bugs identified on Server-Alpha, when arranged in ascending order, form an arithmetic progression with a common difference of 15, whereas the corresponding numbers on Server-Beta, when arranged in descending order, form an arithmetic progression with a common difference of 20.</li>\n<li>Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh identified the median number of bugs on both servers.</li>\n<li>Researchers received an incentive of Rs. 900 for every 5 bugs identified on Server-Alpha and Rs. 1,200 for every 10 bugs identified on Server-Beta.</li>\n</ol>\n\n<p>If Cathy did not identify the highest number of bugs on Server-Beta, who earned the highest total incentive across the two servers?</p>",
+      "options": {
+        "A": "Ananya",
+        "B": "Bashir",
+        "C": "Dinesh",
+        "D": "Esha"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 41,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 39 to 42:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five security software researchers – Ananya, Bashir, Cathy, Dinesh, and Esha – participated in a two-stage bug-hunting competition. The first stage was conducted on Server-Alpha, and the second on Server-Beta. A total of 600 bugs were identified across the two servers.</p>\n<p>The following observations were made:</p>\n<ol type=\"i\">\n<li>The total number of bugs identified across both servers by Ananya was equal to that identified by Cathy.</li>\n<li>The highest number of bugs identified by any researcher on Server-Beta was 5.5 times the lowest number of bugs identified by any researcher on Server-Alpha.</li>\n<li>The numbers of bugs identified on Server-Alpha, when arranged in ascending order, form an arithmetic progression with a common difference of 15, whereas the corresponding numbers on Server-Beta, when arranged in descending order, form an arithmetic progression with a common difference of 20.</li>\n<li>Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh identified the median number of bugs on both servers.</li>\n<li>Researchers received an incentive of Rs. 900 for every 5 bugs identified on Server-Alpha and Rs. 1,200 for every 10 bugs identified on Server-Beta.</li>\n</ol>\n\n<p>How many researchers could have identified less than 100 bugs across the two servers?</p>",
+      "options": null,
+      "correct_answer": "1",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 42,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 39 to 42:</strong> Answer the questions on the basis of the information given below.</p>\n<p>Five security software researchers – Ananya, Bashir, Cathy, Dinesh, and Esha – participated in a two-stage bug-hunting competition. The first stage was conducted on Server-Alpha, and the second on Server-Beta. A total of 600 bugs were identified across the two servers.</p>\n<p>The following observations were made:</p>\n<ol type=\"i\">\n<li>The total number of bugs identified across both servers by Ananya was equal to that identified by Cathy.</li>\n<li>The highest number of bugs identified by any researcher on Server-Beta was 5.5 times the lowest number of bugs identified by any researcher on Server-Alpha.</li>\n<li>The numbers of bugs identified on Server-Alpha, when arranged in ascending order, form an arithmetic progression with a common difference of 15, whereas the corresponding numbers on Server-Beta, when arranged in descending order, form an arithmetic progression with a common difference of 20.</li>\n<li>Only Ananya and Bashir identified more bugs on Server-Alpha than on Server-Beta. Dinesh identified the median number of bugs on both servers.</li>\n<li>Researchers received an incentive of Rs. 900 for every 5 bugs identified on Server-Alpha and Rs. 1,200 for every 10 bugs identified on Server-Beta.</li>\n</ol>\n\n<p>Which of the following statements is definitely false?</p>",
+      "options": {
+        "A": "Ananya identified the highest total number of bugs.",
+        "B": "Esha earned the highest total incentive.",
+        "C": "Cathy identified the highest total number of bugs and earned the highest total incentive.",
+        "D": "The researcher who identified the fewest total bugs earned the lowest total incentive."
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 43,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 43 to 46:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A university organized its annual Student Activity Fair, where students could enroll in four major clubs: Photography Club (PH), Robotics Club (RB), Drama Club (DR), and Entrepreneurship Club (EN).</p>\n<p>A total of 800 students registered for the fair. Out of these 800 students:</p>\n<ul>\n<li>80 students attended only the inauguration ceremony and did not enroll in any club.</li>\n<li>The remaining students enrolled in at least one of the four clubs. Every student could enroll in at most one membership in each club.</li>\n</ul>\n<p>Among those students who enrolled in at least one club, the following information is known:</p>\n<ol type=\"i\">\n<li>Among students enrolled in exactly three clubs, those enrolled in PH, RB and DR (but not EN) were 10% less than the students enrolled in all four clubs, while those enrolled in PH, RB and EN (but not DR) were 10% more than the all-four group.</li>\n<li>Students enrolled in PH, DR and EN (but not RB) were 25% less than the all-four group, whereas those enrolled in RB, DR and EN (but not PH) were 25% more than it.</li>\n<li>The number of students enrolled in exactly three clubs was equal to the number of students who attended only the inauguration ceremony.</li>\n<li>Among students enrolled in exactly two clubs, those enrolled in only PH and DR were equal to the number of students enrolled in all four clubs.</li>\n<li>Students enrolled in only PH and RB were 20% more than the all-four group, while those enrolled in only PH and EN were 20% less than it.</li>\n<li>Students enrolled in only RB and DR exceeded the all-four group by 40%, whereas those enrolled in only DR and EN were 5% less than it.</li>\n<li>Finally, the number of students enrolled in only RB and EN was exactly equal to the number of students enrolled in PH, RB and EN only.</li>\n</ol>\n\n<p>How many students were enrolled in all four clubs?</p>",
+      "options": null,
+      "correct_answer": "20",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 44,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 43 to 46:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A university organized its annual Student Activity Fair, where students could enroll in four major clubs: Photography Club (PH), Robotics Club (RB), Drama Club (DR), and Entrepreneurship Club (EN).</p>\n<p>A total of 800 students registered for the fair. Out of these 800 students:</p>\n<ul>\n<li>80 students attended only the inauguration ceremony and did not enroll in any club.</li>\n<li>The remaining students enrolled in at least one of the four clubs. Every student could enroll in at most one membership in each club.</li>\n</ul>\n<p>Among those students who enrolled in at least one club, the following information is known:</p>\n<ol type=\"i\">\n<li>Among students enrolled in exactly three clubs, those enrolled in PH, RB and DR (but not EN) were 10% less than the students enrolled in all four clubs, while those enrolled in PH, RB and EN (but not DR) were 10% more than the all-four group.</li>\n<li>Students enrolled in PH, DR and EN (but not RB) were 25% less than the all-four group, whereas those enrolled in RB, DR and EN (but not PH) were 25% more than it.</li>\n<li>The number of students enrolled in exactly three clubs was equal to the number of students who attended only the inauguration ceremony.</li>\n<li>Among students enrolled in exactly two clubs, those enrolled in only PH and DR were equal to the number of students enrolled in all four clubs.</li>\n<li>Students enrolled in only PH and RB were 20% more than the all-four group, while those enrolled in only PH and EN were 20% less than it.</li>\n<li>Students enrolled in only RB and DR exceeded the all-four group by 40%, whereas those enrolled in only DR and EN were 5% less than it.</li>\n<li>Finally, the number of students enrolled in only RB and EN was exactly equal to the number of students enrolled in PH, RB and EN only.</li>\n</ol>\n\n<p>The number of students enrolled in exactly one club exceeds those enrolled in exactly two clubs by</p>",
+      "options": null,
+      "correct_answer": "362",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 45,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "MCQ",
+      "text": "<p><strong>Directions for questions 43 to 46:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A university organized its annual Student Activity Fair, where students could enroll in four major clubs: Photography Club (PH), Robotics Club (RB), Drama Club (DR), and Entrepreneurship Club (EN).</p>\n<p>A total of 800 students registered for the fair. Out of these 800 students:</p>\n<ul>\n<li>80 students attended only the inauguration ceremony and did not enroll in any club.</li>\n<li>The remaining students enrolled in at least one of the four clubs. Every student could enroll in at most one membership in each club.</li>\n</ul>\n<p>Among those students who enrolled in at least one club, the following information is known:</p>\n<ol type=\"i\">\n<li>Among students enrolled in exactly three clubs, those enrolled in PH, RB and DR (but not EN) were 10% less than the students enrolled in all four clubs, while those enrolled in PH, RB and EN (but not DR) were 10% more than the all-four group.</li>\n<li>Students enrolled in PH, DR and EN (but not RB) were 25% less than the all-four group, whereas those enrolled in RB, DR and EN (but not PH) were 25% more than it.</li>\n<li>The number of students enrolled in exactly three clubs was equal to the number of students who attended only the inauguration ceremony.</li>\n<li>Among students enrolled in exactly two clubs, those enrolled in only PH and DR were equal to the number of students enrolled in all four clubs.</li>\n<li>Students enrolled in only PH and RB were 20% more than the all-four group, while those enrolled in only PH and EN were 20% less than it.</li>\n<li>Students enrolled in only RB and DR exceeded the all-four group by 40%, whereas those enrolled in only DR and EN were 5% less than it.</li>\n<li>Finally, the number of students enrolled in only RB and EN was exactly equal to the number of students enrolled in PH, RB and EN only.</li>\n</ol>\n\n<p>If the number of students enrolled in the Robotics Club was the highest among all four clubs, what could be the least possible value of this number?</p>",
+      "options": {
+        "A": "267",
+        "B": "268",
+        "C": "269",
+        "D": "270"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 46,
+      "section": "Data Interpretation & Logical Reasoning",
+      "type": "NAT",
+      "text": "<p><strong>Directions for questions 43 to 46:</strong> Answer the questions on the basis of the information given below.</p>\n<p>A university organized its annual Student Activity Fair, where students could enroll in four major clubs: Photography Club (PH), Robotics Club (RB), Drama Club (DR), and Entrepreneurship Club (EN).</p>\n<p>A total of 800 students registered for the fair. Out of these 800 students:</p>\n<ul>\n<li>80 students attended only the inauguration ceremony and did not enroll in any club.</li>\n<li>The remaining students enrolled in at least one of the four clubs. Every student could enroll in at most one membership in each club.</li>\n</ul>\n<p>Among those students who enrolled in at least one club, the following information is known:</p>\n<ol type=\"i\">\n<li>Among students enrolled in exactly three clubs, those enrolled in PH, RB and DR (but not EN) were 10% less than the students enrolled in all four clubs, while those enrolled in PH, RB and EN (but not DR) were 10% more than the all-four group.</li>\n<li>Students enrolled in PH, DR and EN (but not RB) were 25% less than the all-four group, whereas those enrolled in RB, DR and EN (but not PH) were 25% more than it.</li>\n<li>The number of students enrolled in exactly three clubs was equal to the number of students who attended only the inauguration ceremony.</li>\n<li>Among students enrolled in exactly two clubs, those enrolled in only PH and DR were equal to the number of students enrolled in all four clubs.</li>\n<li>Students enrolled in only PH and RB were 20% more than the all-four group, while those enrolled in only PH and EN were 20% less than it.</li>\n<li>Students enrolled in only RB and DR exceeded the all-four group by 40%, whereas those enrolled in only DR and EN were 5% less than it.</li>\n<li>Finally, the number of students enrolled in only RB and EN was exactly equal to the number of students enrolled in PH, RB and EN only.</li>\n</ol>\n\n<p>If the number of students enrolled in the Entrepreneurship Club was the lowest among all four clubs, what could be the maximum possible value of this number?</p>",
+      "options": null,
+      "correct_answer": "266",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 47,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>In an aptitude test consisting of four different modules, a student's original score in each module was an integer. When the scores of any three modules were added, the four possible sums obtained were 124, 128, 130, and 122. What was the average of the student's original scores across all four modules?</p>",
+      "options": null,
+      "correct_answer": "42",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 48,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A regular hexagon <em>H</em><sub>1</sub> has side length 6 cm. Another regular hexagon <em>H</em><sub>2</sub> is inscribed in <em>H</em><sub>1</sub> such that its vertices divide the sides of <em>H</em><sub>1</sub> in the ratio 1 : 2. What is the ratio of the area of the region inside <em>H</em><sub>1</sub> but outside <em>H</em><sub>2</sub> to the area of <em>H</em><sub>2</sub>?</p>",
+      "options": {
+        "A": "2 : 7",
+        "B": "11 : 27",
+        "C": "13 : 27",
+        "D": "5 : 14"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 49,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Consider the quadratic equation (<em>k</em> + 1)<em>x</em><sup>2</sup> - 2(<em>k</em> + 1)<em>x</em> + <em>k</em> = 0, where <em>k</em> is a real parameter with <em>k</em> ≠ -1. For what range of values of <em>k</em> does the equation have both roots strictly greater than 0 and strictly less than 2?</p>",
+      "options": {
+        "A": "(-1, 0)",
+        "B": "[0, ∞)",
+        "C": "(-1, ∞)",
+        "D": "(0, ∞)"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 50,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A training institute conducted a series of certification tests. In the first test, 75% of the enrolled candidates passed. In the second test, only 60% of the candidates who passed the first test managed to pass. In each subsequent test, candidates who passed the previous test appeared, and the pass percentage was 75% for all tests from the third test onwards. If the number of candidates who passed the <em>n</em><sup>th</sup> test was 81, what is the minimum number of tests conducted?</p>",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 51,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Find the maximum real value of <em>M</em> such that the inequality 3<sup><em>x</em></sup> + 576 / 3<sup><em>x</em></sup> - <em>M</em> ≥ 0 holds for all real numbers <em>x</em>.</p>",
+      "options": {
+        "A": "24",
+        "B": "36",
+        "C": "42",
+        "D": "48"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 52,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Aman and Priya start simultaneously from points A and B respectively, moving towards each other along a straight road. After meeting at an intermediate point M, Aman increases his speed by 25% while Priya increases her speed by 20%. If Aman reaches B in 4 hours after meeting, and Priya reaches A in 5 hours after meeting, what is the total distance (in km) between A and B, given that Aman's original speed was 15 km/h?</p>",
+      "options": {
+        "A": "120",
+        "B": "135",
+        "C": "150",
+        "D": "108"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 53,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Let <em>g</em>(<em>n</em>) be a function defined for all integers <em>n</em> ≥ 0. If <em>g</em>(1) = 1 and <em>g</em> satisfies <em>g</em>(<em>a</em> - <em>b</em>) + <em>g</em>(<em>a</em> + <em>b</em>) = [<em>g</em>(2<em>a</em>) + <em>g</em>(2<em>b</em>)] / 2 for all integers <em>a</em> ≥ <em>b</em> ≥ 0, then <em>g</em>(2026) is equal to:</p>",
+      "options": {
+        "A": "2026<sup>2</sup>",
+        "B": "2026",
+        "C": "2027<sup>2</sup>",
+        "D": "2025 × 2026"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 54,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>In a gaming club of 150 students, students enrolled to play Chess, Carom or Ludo. The number of students who enrolled for only chess, only carom and only ludo are equal. The number enrolled in exactly two games is also equal for every pair. The number of students enrolled in all three games is 50% of the number of students who did not enroll in any game. If exactly 60 students enrolled in chess, and the number enrolled only in Chess is at least 80% of those enrolled in none of the games, what is the maximum possible number of students enrolled in all three games?</p>",
+      "options": null,
+      "correct_answer": "15",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 55,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A retailer sells two gadgets, A and B. Gadget A is marked at 50% above its cost price, while Gadget B is marked at 100% above its cost price. The cost price of Gadget B is 50% higher than that of Gadget A. Both gadgets are sold at the same discount rate (<em>d</em>%) on their respective marked prices. If the retailer earns a profit of Rs. 100 on Gadget A and Rs. 450 on Gadget B, what is the cost price (in Rs.) of Gadget A?</p>",
+      "options": {
+        "A": "400",
+        "B": "500",
+        "C": "600",
+        "D": "750"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 56,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>What is the sum of all the digits of the number formed by the expression (10<sup>80</sup> + 10<sup>40</sup> - 132)?</p>",
+      "options": {
+        "A": "356",
+        "B": "351",
+        "C": "348",
+        "D": "360"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 57,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>If 25 = (log<sub>3</sub> 9<em>z</em>)<sup>3</sup> - (log<sub>3</sub> 3<em>y</em>)<sup>3</sup> - 3(log<sub>3</sub> 2<em>x</em>)<sup>2</sup> and <em>x</em> : <em>y</em> : <em>z</em> = 1 : 2 : 2, then what is the value of 2<em>x</em> + 3<em>y</em> - <em>z</em>?</p>",
+      "options": null,
+      "correct_answer": "27",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 58,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Arun is three times as efficient as Barun, while Barun is twice as efficient as Chitra. All three begin working on a project together. After a certain number of days, Barun leaves the project. At that exact moment, the client adds new requirements, increasing the remaining work by 20%. Arun and Chitra continue working on the revised project for 10 more days, after which Arun also leaves. Chitra then completes the remaining work in 20 days. If the total time taken to complete the revised project is 45 days, how many days would Arun take to complete the original (pre-revision) project working alone?</p>",
+      "options": {
+        "A": "60",
+        "B": "40",
+        "C": "35",
+        "D": "25"
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 59,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>In trapezium ABCD, AB is parallel to DC, AB = 12 cm, DC = 20 cm, AD = 34 cm, and ∠DAB = 90°. Point E lies on AD such that BE is perpendicular to EC. What is the maximum possible area (in sq. cm) of △BEC?</p>",
+      "options": null,
+      "correct_answer": "300",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 60,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>Let <em>y</em> = |<em>x</em> + 2| + |<em>x</em> - 4| + |<em>x</em> - 8|, where <em>x</em> is a real number. Then, what is the minimum value of <em>y</em>?</p>",
+      "options": null,
+      "correct_answer": "10",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 61,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A large industrial reservoir is equipped with two inlet pipes, Pipe A and Pipe B, and one outlet pipe, Pipe C. Pipe A can fill the empty reservoir in 10 hours, Pipe B can fill it in 15 hours, and Pipe C can empty a full reservoir in 12 hours. At 9:00 AM, Pipe A is opened to begin filling the empty reservoir. At 11:00 AM, Pipe B is also opened. At 1:00 PM, Pipe C is opened. Due to increased pressure and turbulence, the opening of Pipe C reduces the filling rates of both Pipe A and Pipe B by 25% of their original rates, while the emptying rate of Pipe C remains unchanged. At what time will the reservoir be completely filled?</p>",
+      "options": {
+        "A": "10:48 PM same day",
+        "B": "11:32 PM same day",
+        "C": "12:12 AM next day",
+        "D": "1:24 AM next day"
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 62,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>A basket contains only red and blue balls. Initially, the ratio of red balls to blue balls is 4 : 1. After some balls were removed from the basket, the ratio of the remaining red balls to the remaining blue balls became 7 : 1. What is the smallest possible total number of balls that were in the basket initially?</p>",
+      "options": null,
+      "correct_answer": "10",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 63,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>Let <em>x</em> and <em>y</em> be positive real numbers such that <em>x</em> / (<em>x</em> + <em>y</em><sup>2</sup>) + <em>y</em> / (<em>y</em> + <em>x</em><sup>2</sup>) = 3/4 and <em>xy</em> = 3. What is the value of <em>x</em><sup>3</sup> + <em>y</em><sup>3</sup>?</p>",
+      "options": null,
+      "correct_answer": "12",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 64,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>Let AB be a diameter of a circle, and C be a point on AB with 2AC = BC. Let D and E be points on the circle such that DC is perpendicular to AB, and let DE be another diameter of the circle. If the diameter of the circle is 6 cm, what is the area (in sq. cm) of △DCE?</p>",
+      "options": {
+        "A": "4√2",
+        "B": "3√2",
+        "C": "2√3",
+        "D": "2√2"
+      },
+      "correct_answer": "D",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 65,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A health supplement is produced by mixing three primary ingredients: Protein powder (P), Carbohydrate powder (C), and a Fiber supplement (F). The cost of a kg of P, C, and F is Rs. 1,200, Rs. 400, and Rs. 2,000, respectively. A standard batch of \"Daily-Fit\" contains exactly 15% F and costs Rs. 880 per kg to produce. A premium version, called \"Pro-Fit\", is created by doubling the percentage of P found in \"Daily-Fit\" while maintaining the same 15% F. If a manufacturer produces a 44 kg batch of \"Pro-Fit\", how many kilograms of C are used?</p>",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "12"
+      },
+      "correct_answer": "C",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 66,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>An investor makes annual deposits into a savings scheme for 32 years, with the deposits forming a geometric progression. The total amount deposited over all 32 years is 10 times the total amount deposited in the odd-numbered years. If the deposit made in the first year was Rs. 125, what was the deposit (in Rs.) made in the fourth year?</p>",
+      "options": {
+        "A": "91,125",
+        "B": "82,125",
+        "C": "93,750",
+        "D": "1,01,250"
+      },
+      "correct_answer": "A",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    },
+    {
+      "id": 67,
+      "section": "Quantitative Ability",
+      "type": "NAT",
+      "text": "<p>Let P be a two-digit positive integer such that the greatest common divisor of P + 12, P + 40, and P + 75 is greater than 1. What is the sum of all possible values of P?</p>",
+      "options": null,
+      "correct_answer": "654",
+      "marks_positive": 3.0,
+      "marks_negative": 0.0
+    },
+    {
+      "id": 68,
+      "section": "Quantitative Ability",
+      "type": "MCQ",
+      "text": "<p>A fruit merchant received shipments of mangoes packed in crates from three different orchards. Crates from the first orchard weighed an average of 86 kg each. Crates from the second orchard weighed an average of 75 kg each. Crates from the third orchard weighed an average of 60 kg each. The number of crates received from each orchard is a prime number, and the total weight of all the crates combined is 1735 kg. Determine the total number of crates received.</p>",
+      "options": {
+        "A": "23",
+        "B": "25",
+        "C": "27",
+        "D": "29"
+      },
+      "correct_answer": "B",
+      "marks_positive": 3.0,
+      "marks_negative": 1.0
+    }
+  ]
+}

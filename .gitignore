@@ -1,0 +1,65 @@
+# =========================================================================
+# MockShift - Git Ignore Configuration
+# Prevents any sensitive keys, credentials, local environments, or uploaded
+# test papers from being committed to source control.
+# =========================================================================
+
+# Environment variables & API Keys
+.env
+.env.*
+*.env
+!.env.example
+
+# Google OAuth Credentials & Secret files
+*client_secret*.json
+*credentials*.json
+*token*.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE, Editor & OS artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/
+uploads/
+
+# User PDF uploads (BYOP question papers & keys)
+*.pdf

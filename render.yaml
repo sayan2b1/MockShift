@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: mockshift
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: GEMINI_EXTRACT_MODEL
+        value: gemini-3.5-flash-lite
+      - key: GEMINI_SOLVER_MODEL
+        value: gemini-3.6-flash
+      - key: GEMINI_API_KEY
+        sync: false
