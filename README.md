@@ -1,11 +1,14 @@
 # MockShift (SimulCast AI) — Bring Your Own Paper (BYOP) CBT Exam Simulator
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-mockshift.onrender.com-success?style=for-the-badge&logo=render&logoColor=white)](https://mockshift.onrender.com)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sayan2b1/MockShift)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![Gemini API](https://img.shields.io/badge/Google%20GenAI-gemini--3.6--flash-blue.svg?logo=google&logoColor=white)](https://ai.google.dev/)
 
 **MockShift** is a state-of-the-art "Bring Your Own Paper" Computer-Based Test (CBT) simulator and AI-powered post-test analytics engine designed for Indian competitive exams (**CAT, GATE, JEE, NEET, UPSC, SSC, Banking, CUET, and Custom**).
+
+🔗 **Live Website:** [https://mockshift.onrender.com](https://mockshift.onrender.com)
 
 Powered by the modern `google-genai` Python SDK, MockShift pairs **`gemini-3.5-flash-lite`** for high-speed, token-efficient PDF extraction with resilient multi-model fallback (**`gemini-3.6-flash`**, **`gemini-3.5-flash`**, **`gemini-3.8-flash`**) for lazy answer solving, surgical mistake autopsies, and adaptive weakness drills.
 
