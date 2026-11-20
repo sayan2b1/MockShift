@@ -1,8 +1,30 @@
 # MockShift (SimulCast AI) — Bring Your Own Paper (BYOP) CBT Exam Simulator
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sayan2b1/MockShift)
+[![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](https://opensource.org/licenses/MIT)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Gemini API](https://img.shields.io/badge/Google%20GenAI-gemini--3.6--flash-blue.svg?logo=google&logoColor=white)](https://ai.google.dev/)
+
 **MockShift** is a state-of-the-art "Bring Your Own Paper" Computer-Based Test (CBT) simulator and AI-powered post-test analytics engine designed for Indian competitive exams (**CAT, GATE, JEE, NEET, UPSC, SSC, Banking, CUET, and Custom**).
 
 Powered by the modern `google-genai` Python SDK, MockShift pairs **`gemini-3.5-flash-lite`** for high-speed, token-efficient PDF extraction with resilient multi-model fallback (**`gemini-3.6-flash`**, **`gemini-3.5-flash`**, **`gemini-3.8-flash`**) for lazy answer solving, surgical mistake autopsies, and adaptive weakness drills.
+
+---
+
+## 🌐 1-Click Public Cloud Deployment (Access from Anywhere)
+
+You can host MockShift online for free so anyone can use it without running localhost:
+
+### Option A: 1-Click Deploy on Render (Recommended)
+1. Click the **[Deploy to Render](https://render.com/deploy?repo=https://github.com/sayan2b1/MockShift)** button above (or connect `sayan2b1/MockShift` in [Render Dashboard](https://dashboard.render.com)).
+2. Set your environment variable:
+   - `GEMINI_API_KEY`: Your Gemini API Key from [Google AI Studio](https://aistudio.google.com/) *(optional if students use their own keys via the in-app BYOK modal)*.
+3. Render will deploy the application and give you a public URL (e.g. `https://mockshift.onrender.com`) that anyone can open from any device!
+
+### Option B: Deploy on Railway
+1. Go to [Railway.app](https://railway.app/) and select **New Project** → **Deploy from GitHub repo** → **`sayan2b1/MockShift`**.
+2. Add `GEMINI_API_KEY` under Variables.
+3. Click **Generate Domain** to get an instant public URL (e.g. `https://mockshift-production.up.railway.app`).
 
 ---
 
