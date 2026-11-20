@@ -56,6 +56,12 @@
     </div>
 
     <div class="header-actions">
+      <!-- MockShift Pro Upgrade Button -->
+      <button class="btn btn-pro-pill" id="header-pro-btn" title="MockShift Pro & Quota">
+        <i class="fas fa-crown" style="color: #f59e0b;"></i>
+        <span id="header-pro-text">Upgrade</span>
+      </button>
+
       <!-- Header Submit Test Button (Visible during CBT) -->
       <button class="btn btn-danger" id="header-submit-btn" style="display: none;" title="Finish and Submit Exam">
         <i class="fas fa-paper-plane"></i>
@@ -245,6 +251,17 @@
 
       <!-- Upload Card -->
       <div class="upload-card">
+
+        <!-- Weekly Upload Quota Tracker Banner -->
+        <div class="quota-tracker-banner" id="quota-tracker-banner">
+          <div class="quota-info">
+            <span class="quota-icon" id="quota-icon"><i class="fas fa-bolt"></i></span>
+            <span class="quota-text" id="quota-text">Weekly Free Uploads: <strong>0 / 3 Used</strong> (3 remaining this week)</span>
+          </div>
+          <button type="button" class="btn btn-sm btn-upgrade-pill" id="quota-upgrade-btn">
+            <i class="fas fa-crown"></i> Upgrade to Pro
+          </button>
+        </div>
 
         <!-- Upload Source Tabs: Local File vs Google Drive -->
         <div class="upload-source-tabs">
@@ -736,6 +753,100 @@
     </div>
     <div class="drawer-body" id="past-records-list">
       <!-- Rendered dynamically by MockShiftAuth -->
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MOCKSHIFT PRO & MONETIZATION UPGRADE MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="pro-upgrade-modal-backdrop">
+    <div class="autopsy-modal-content pro-modal-content" style="max-width: 680px;">
+      <div class="autopsy-header" style="border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <div class="pro-crown-badge">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #f59e0b; margin: 0;">MockShift Pro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0.2rem 0 0 0;">Supercharge your competitive exam prep with unlimited AI mocks</p>
+          </div>
+        </div>
+        <button class="calc-close-btn" id="pro-modal-close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="autopsy-body" style="padding: 1.5rem;">
+        <!-- Dynamic Quota Alert Banner -->
+        <div class="pro-quota-alert" id="pro-modal-quota-alert" style="display: none;"></div>
+
+        <!-- Plan Comparison Grid -->
+        <div class="pricing-grid">
+          <!-- Free Tier -->
+          <div class="pricing-card free-card">
+            <div class="pricing-plan-name">Free Plan</div>
+            <div class="pricing-price">₹0 <span class="pricing-cycle">/ forever</span></div>
+            <p class="pricing-desc">Essential practice for aspirants</p>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check" style="color: #10b981;"></i> <strong>3 PDF Uploads / week</strong></li>
+              <li><i class="fas fa-check" style="color: #10b981;"></i> 12Q & 68Q Benchmark Mocks</li>
+              <li><i class="fas fa-check" style="color: #10b981;"></i> Unlimited Shared Paper Imports</li>
+              <li><i class="fas fa-check" style="color: #10b981;"></i> TCS iON GATE & CAT Calculators</li>
+              <li><i class="fas fa-check" style="color: #10b981;"></i> KaTeX Math & Virtual NAT Numpad</li>
+              <li class="disabled"><i class="fas fa-times"></i> Unlimited PDF Ingestion</li>
+              <li class="disabled"><i class="fas fa-times"></i> Priority Multi-Model AI Routing</li>
+            </ul>
+            <div class="pricing-current-badge">Your Current Plan</div>
+          </div>
+
+          <!-- Pro Tier (Popular) -->
+          <div class="pricing-card pro-card popular">
+            <div class="popular-ribbon">Most Popular</div>
+            <div class="pricing-plan-name" style="color: #f59e0b;"><i class="fas fa-crown"></i> MockShift Pro</div>
+            <div class="pricing-price">₹199 <span class="pricing-cycle">/ month</span></div>
+            <div style="font-size: 0.78rem; color: #10b981; font-weight: 700; margin-bottom: 0.5rem;">Or ₹499 / year (Save 60%)</div>
+            <p class="pricing-desc">Uncapped AI coaching for serious rankers</p>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> <strong>👑 Unlimited PDF Question Papers</strong></li>
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> <strong>⚡ Priority AI Model Reasoning</strong></li>
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> Unlimited AI Mistake Autopsies</li>
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> Adaptive 5Q Weakness Drills</li>
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> Cross-Device Google Drive Sync</li>
+              <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> Download PDF High-Contrast Reports</li>
+            </ul>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+              <button class="btn btn-pro-checkout" id="subscribe-yearly-btn">
+                <i class="fas fa-bolt"></i> Get Annual Pro (₹499/yr)
+              </button>
+              <button class="btn btn-secondary btn-sm" id="subscribe-monthly-btn" style="border-color: rgba(245, 158, 11, 0.4); color: #f59e0b;">
+                Monthly Plan (₹199/mo)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- License Key / Coupon Redemption Box -->
+        <div class="pro-license-box">
+          <label style="font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-ticket-alt" style="color: var(--accent);"></i> Have a License Key or Coupon Code?
+          </label>
+          <div class="pro-license-input-group">
+            <input type="text" id="pro-license-input" placeholder="Enter activation code (e.g. MOCKPRO)" class="edit-input" style="text-transform: uppercase;">
+            <button class="btn btn-primary" id="pro-activate-btn" style="white-space: nowrap;">
+              <i class="fas fa-unlock"></i> Activate Pro
+            </button>
+          </div>
+          <div id="pro-activate-status" style="display: none; margin-top: 0.6rem;"></div>
+          <p style="font-size: 0.74rem; color: var(--text-muted); margin-top: 0.4rem;">
+            Use demo promo code <strong>MOCKPRO</strong> to test instant 1-year Pro unlock!
+          </p>
+        </div>
+
+        <!-- BYOK Alternative Note -->
+        <div style="margin-top: 1.25rem; padding: 0.75rem 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); border: 1px dashed var(--border); font-size: 0.8rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: center;">
+          <i class="fas fa-lightbulb" style="color: var(--accent); font-size: 1.1rem;"></i>
+          <span><strong>Developer / BYOK Option:</strong> You can also supply your personal free Gemini API key in <a href="javascript:void(0)" onclick="window.MockShiftAuth && window.MockShiftAuth.openKeyModal()" style="color: var(--accent); text-decoration: underline;">API Key Settings</a>.</span>
+        </div>
+      </div>
     </div>
   </div>
 

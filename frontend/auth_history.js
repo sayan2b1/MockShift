@@ -19,6 +19,8 @@ class MockShiftAuthManager {
     this.updateKeyStatusUI();
     this.updateRecordCountBadge();
     this.updateSyncStatusUI();
+    this.updateQuotaBadgeUI();
+    this.setupProModalListeners();
   }
 
   updateRecordCountBadge() {
@@ -850,6 +852,314 @@ class MockShiftAuthManager {
   closePastRecordsDrawer() {
     const drawer = document.getElementById("past-records-drawer");
     if (drawer) drawer.classList.remove("open");
+  }
+
+  // =========================================================================
+  // 5. WEEKLY PDF UPLOAD QUOTA & MOCKSHIFT PRO MONETIZATION ENGINE
+  // =========================================================================
+  getQuotaStatus() {
+    // 1. Check if user has active MockShift Pro plan
+    if (this.isProUser()) {
+      return {
+        isPro: true,
+        limit: Infinity,
+        used: 0,
+        remaining: Infinity,
+        canUpload: true,
+        resetDate: null,
+        resetDays: 0
+      };
+    }
+
+    // 2. Compute rolling 7-day usage
+    const key = (MockShiftConfig.STORAGE_KEYS.UPLOAD_QUOTA || "mockshift_upload_quota") + "_" + this.getActiveUserId();
+    let timestamps = [];
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) timestamps = JSON.parse(raw);
+      if (!Array.isArray(timestamps)) timestamps = [];
+    } catch (e) {
+      timestamps = [];
+    }
+
+    const ONE_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+    const now = Date.now();
+    // Filter to last 7 days
+    const recentUploads = timestamps.filter(ts => (now - ts) < ONE_WEEK_MS);
+
+    if (recentUploads.length !== timestamps.length) {
+      localStorage.setItem(key, JSON.stringify(recentUploads));
+    }
+
+    const limit = MockShiftConfig.FREE_UPLOADS_PER_WEEK || 3;
+    const used = recentUploads.length;
+    const remaining = Math.max(0, limit - used);
+
+    let resetDate = null;
+    let resetDays = 0;
+    if (used > 0) {
+      const oldest = Math.min(...recentUploads);
+      resetDate = new Date(oldest + ONE_WEEK_MS);
+      resetDays = Math.max(1, Math.ceil((oldest + ONE_WEEK_MS - now) / (24 * 60 * 60 * 1000)));
+    }
+
+    return {
+      isPro: false,
+      limit,
+      used,
+      remaining,
+      canUpload: remaining > 0,
+      resetDate,
+      resetDays
+    };
+  }
+
+  recordPdfUpload() {
+    if (this.isProUser()) return;
+    const key = (MockShiftConfig.STORAGE_KEYS.UPLOAD_QUOTA || "mockshift_upload_quota") + "_" + this.getActiveUserId();
+    let timestamps = [];
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) timestamps = JSON.parse(raw);
+      if (!Array.isArray(timestamps)) timestamps = [];
+    } catch (e) {
+      timestamps = [];
+    }
+
+    timestamps.push(Date.now());
+    localStorage.setItem(key, JSON.stringify(timestamps));
+    this.updateQuotaBadgeUI();
+  }
+
+  isProUser() {
+    try {
+      const key = MockShiftConfig.STORAGE_KEYS.PRO_STATUS || "mockshift_pro_status";
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        const data = JSON.parse(raw);
+        if (data && data.active) {
+          if (!data.expiresAt || new Date(data.expiresAt).getTime() > Date.now()) {
+            return true;
+          }
+        }
+      }
+    } catch (e) {}
+    return false;
+  }
+
+  activatePro(codeOrKey) {
+    const clean = String(codeOrKey || "").trim().toUpperCase();
+    const VALID_PROMO_CODES = [
+      "MOCKSHIFT_PRO",
+      "PREMIUM",
+      "PRO2026",
+      "TOPPER",
+      "PROPASS",
+      "MOCKSHIFT100",
+      "MOCKPRO"
+    ];
+
+    const isValid = VALID_PROMO_CODES.includes(clean) || (clean.startsWith("MOCK-") && clean.length >= 8);
+
+    if (isValid) {
+      const expiry = new Date();
+      expiry.setFullYear(expiry.getFullYear() + 1); // 1-year Pro access
+      const proData = {
+        active: true,
+        plan: "MockShift Pro Annual",
+        code: clean,
+        activatedAt: new Date().toISOString(),
+        expiresAt: expiry.toISOString()
+      };
+      const key = MockShiftConfig.STORAGE_KEYS.PRO_STATUS || "mockshift_pro_status";
+      localStorage.setItem(key, JSON.stringify(proData));
+      this.updateQuotaBadgeUI();
+      return {
+        success: true,
+        message: "MockShift Pro activated successfully! Unlimited PDF uploads unlocked."
+      };
+    }
+
+    return {
+      success: false,
+      message: "Invalid activation code. Please check your license key or subscribe below."
+    };
+  }
+
+  updateQuotaBadgeUI() {
+    const quota = this.getQuotaStatus();
+
+    // 1. Update Header Pro Pill Button
+    const headerProBtn = document.getElementById("header-pro-btn");
+    const headerProText = document.getElementById("header-pro-text");
+    if (headerProBtn) {
+      if (quota.isPro) {
+        headerProBtn.className = "btn btn-pro-pill pro-active";
+        if (headerProText) headerProText.textContent = "Pro Active";
+        headerProBtn.title = "MockShift Pro: Unlimited Uploads Unlocked";
+      } else {
+        headerProBtn.className = "btn btn-pro-pill";
+        if (headerProText) headerProText.textContent = "Upgrade";
+        headerProBtn.title = `Weekly Free Uploads: ${quota.used}/${quota.limit} used. Click to upgrade!`;
+      }
+    }
+
+    // 2. Update Home Screen Quota Tracker Banner
+    const trackerBanner = document.getElementById("quota-tracker-banner");
+    const trackerIcon = document.getElementById("quota-icon");
+    const trackerText = document.getElementById("quota-text");
+    const trackerUpgradeBtn = document.getElementById("quota-upgrade-btn");
+
+    if (trackerBanner && trackerText) {
+      if (quota.isPro) {
+        trackerBanner.className = "quota-tracker-banner pro-active";
+        if (trackerIcon) trackerIcon.innerHTML = '<i class="fas fa-crown" style="color: #f59e0b;"></i>';
+        trackerText.innerHTML = `<strong>MockShift Pro Active:</strong> Unlimited PDF Question Papers unlocked.`;
+        if (trackerUpgradeBtn) {
+          trackerUpgradeBtn.textContent = "Pro Benefits";
+          trackerUpgradeBtn.className = "btn btn-sm btn-upgrade-pill";
+        }
+      } else if (!quota.canUpload) {
+        trackerBanner.className = "quota-tracker-banner limit-reached";
+        if (trackerIcon) trackerIcon.innerHTML = '<i class="fas fa-exclamation-triangle" style="color: #ef4444;"></i>';
+        trackerText.innerHTML = `Weekly Free Limit Reached (<strong>${quota.used} / ${quota.limit} PDFs used</strong>). Refreshes in <strong>${quota.resetDays} day${quota.resetDays > 1 ? 's' : ''}</strong>.`;
+        if (trackerUpgradeBtn) {
+          trackerUpgradeBtn.innerHTML = '<i class="fas fa-crown"></i> Unlock Unlimited';
+          trackerUpgradeBtn.className = "btn btn-sm btn-upgrade-pill pulse";
+        }
+      } else {
+        trackerBanner.className = "quota-tracker-banner";
+        if (trackerIcon) trackerIcon.innerHTML = '<i class="fas fa-bolt" style="color: var(--accent);"></i>';
+        trackerText.innerHTML = `Weekly Free Uploads: <strong>${quota.used} / ${quota.limit} Used</strong> (${quota.remaining} remaining this week)`;
+        if (trackerUpgradeBtn) {
+          trackerUpgradeBtn.innerHTML = '<i class="fas fa-crown"></i> Upgrade to Pro';
+          trackerUpgradeBtn.className = "btn btn-sm btn-upgrade-pill";
+        }
+      }
+    }
+  }
+
+  setupProModalListeners() {
+    // Header Pro Button
+    const headerProBtn = document.getElementById("header-pro-btn");
+    if (headerProBtn) {
+      headerProBtn.addEventListener("click", () => this.openProModal());
+    }
+
+    // Quota banner upgrade button
+    const quotaUpgradeBtn = document.getElementById("quota-upgrade-btn");
+    if (quotaUpgradeBtn) {
+      quotaUpgradeBtn.addEventListener("click", () => this.openProModal());
+    }
+
+    // Modal close button & backdrop
+    const proModalClose = document.getElementById("pro-modal-close");
+    if (proModalClose) {
+      proModalClose.addEventListener("click", () => this.closeProModal());
+    }
+
+    const proBackdrop = document.getElementById("pro-upgrade-modal-backdrop");
+    if (proBackdrop) {
+      proBackdrop.addEventListener("click", (e) => {
+        if (e.target === proBackdrop) this.closeProModal();
+      });
+    }
+
+    // License key / promo code redemption
+    const activateBtn = document.getElementById("pro-activate-btn");
+    if (activateBtn) {
+      activateBtn.addEventListener("click", () => {
+        const input = document.getElementById("pro-license-input");
+        const statusEl = document.getElementById("pro-activate-status");
+        const code = input ? input.value : "";
+        const res = this.activatePro(code);
+
+        if (statusEl) {
+          statusEl.style.display = "block";
+          if (res.success) {
+            statusEl.className = "pro-status-msg success";
+            statusEl.innerHTML = `<i class="fas fa-check-circle"></i> ${res.message}`;
+            setTimeout(() => this.closeProModal(), 1800);
+          } else {
+            statusEl.className = "pro-status-msg error";
+            statusEl.innerHTML = `<i class="fas fa-times-circle"></i> ${res.message}`;
+          }
+        }
+      });
+    }
+
+    // Checkout buttons
+    const subscribeMonthlyBtn = document.getElementById("subscribe-monthly-btn");
+    if (subscribeMonthlyBtn) {
+      subscribeMonthlyBtn.addEventListener("click", () => this.handleSubscribeClick("monthly"));
+    }
+
+    const subscribeYearlyBtn = document.getElementById("subscribe-yearly-btn");
+    if (subscribeYearlyBtn) {
+      subscribeYearlyBtn.addEventListener("click", () => this.handleSubscribeClick("yearly"));
+    }
+  }
+
+  handleSubscribeClick(plan = "yearly") {
+    // Direct payment link or WhatsApp/UPI checkout prompt
+    const price = plan === "monthly" ? "₹199/month" : "₹499/year";
+    const promptMsg = 
+      `MockShift Pro (${price})\n\n` +
+      `To complete your upgrade:\n` +
+      `1. Send your payment via UPI to: mockshift@upi\n` +
+      `2. Or use promo code 'MOCKPRO' below for instant evaluation access!\n\n` +
+      `Would you like to copy the UPI ID?`;
+
+    if (confirm(promptMsg)) {
+      navigator.clipboard?.writeText("mockshift@upi").catch(() => {});
+      if (window.MockShiftApp && window.MockShiftApp.showToast) {
+        window.MockShiftApp.showToast("UPI ID (mockshift@upi) copied to clipboard!", "success");
+      }
+    }
+  }
+
+  openProModal(options = {}) {
+    const modal = document.getElementById("pro-upgrade-modal-backdrop");
+    if (!modal) return;
+
+    const quota = this.getQuotaStatus();
+    const alertBox = document.getElementById("pro-modal-quota-alert");
+    if (alertBox) {
+      if (options.reason === "quota_exceeded" || !quota.canUpload) {
+        alertBox.style.display = "block";
+        alertBox.innerHTML = `
+          <i class="fas fa-exclamation-triangle" style="color: #ef4444; font-size: 1.1rem;"></i>
+          <div>
+            <strong>Weekly Free Limit Reached (${quota.used} / ${quota.limit} PDFs Used)</strong>
+            <div style="font-size: 0.8rem; margin-top: 0.2rem; color: var(--text-muted);">
+              Your free quota refreshes on ${quota.resetDate ? quota.resetDate.toLocaleDateString() : 'next week'}. Upgrade to Pro for unlimited uploads right now!
+            </div>
+          </div>
+        `;
+      } else if (quota.isPro) {
+        alertBox.style.display = "block";
+        alertBox.style.borderColor = "rgba(245, 158, 11, 0.4)";
+        alertBox.style.background = "rgba(245, 158, 11, 0.08)";
+        alertBox.innerHTML = `
+          <i class="fas fa-crown" style="color: #f59e0b; font-size: 1.1rem;"></i>
+          <div>
+            <strong style="color: #f59e0b;">MockShift Pro is Active on this Device</strong>
+            <div style="font-size: 0.8rem; margin-top: 0.2rem; color: var(--text-muted);">
+              You have unlimited PDF uploads, priority AI model reasoning, and step-by-step mistake autopsies.
+            </div>
+          </div>
+        `;
+      } else {
+        alertBox.style.display = "none";
+      }
+    }
+
+    modal.classList.add("open");
+  }
+
+  closeProModal() {
+    const modal = document.getElementById("pro-upgrade-modal-backdrop");
+    if (modal) modal.classList.remove("open");
   }
 }
 

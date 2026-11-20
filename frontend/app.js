@@ -511,6 +511,18 @@ class MockShiftCBT {
   }
 
   async uploadAndParsePDF() {
+    // 1. Enforce Weekly 3-PDF Upload Quota for Free Tier
+    if (window.MockShiftAuth) {
+      const quota = window.MockShiftAuth.getQuotaStatus();
+      if (!quota.canUpload && !quota.isPro) {
+        window.MockShiftAuth.openProModal({
+          reason: "quota_exceeded",
+          message: `Weekly limit reached (${quota.used}/${quota.limit} uploads used). Refreshes in ${quota.resetDays} days.`
+        });
+        return;
+      }
+    }
+
     this.showUploadProgress(true, 'Analyzing your question paper and preparing CBT interface...');
     const formData = new FormData();
     formData.append('question_pdf', this.questionFile);
@@ -546,6 +558,12 @@ class MockShiftCBT {
       }
 
       const paperData = await res.json();
+
+      // Record successful PDF upload in quota manager
+      if (window.MockShiftAuth) {
+        window.MockShiftAuth.recordPdfUpload();
+      }
+
       this.showUploadProgress(false);
       this.initQuickEditor(paperData);
     } catch (err) {
