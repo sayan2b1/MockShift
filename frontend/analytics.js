@@ -26,11 +26,12 @@ class MockShiftAnalytics {
     this.focusBreaks = [];
   }
 
-  async evaluateAndRender(examData, userAnswers, timeSpent, focusBreaks) {
+  async evaluateAndRender(examData, userAnswers, timeSpent, focusBreaks, options = {}) {
     this.examData = examData;
     this.userAnswers = userAnswers;
     this.timeSpent = timeSpent;
     this.focusBreaks = focusBreaks || [];
+    this.currentOptions = options || {};
 
     // Stage 2: Token-Optimized Lazy Evaluation
     // Find attempted questions where correct_answer is null
@@ -263,9 +264,10 @@ class MockShiftAnalytics {
   renderDashboard() {
     const metrics = this.computeMetrics();
 
-    // Save test record into user's isolated local history (and sync to Google Drive if connected)
-    if (window.MockShiftAuth && window.MockShiftAuth.saveExamAttempt) {
+    // ONLY save test record if this is an actual newly submitted exam (NEVER when inspecting past records)
+    if (this.currentOptions && this.currentOptions.isNewSubmission && window.MockShiftAuth && window.MockShiftAuth.saveExamAttempt) {
       window.MockShiftAuth.saveExamAttempt({
+        id: this.currentOptions.attemptId,
         examTitle: this.examData.exam_title,
         examMode: this.examData.exam_mode,
         totalScore: metrics.totalScore,
@@ -288,6 +290,8 @@ class MockShiftAnalytics {
         focusBreaks: this.focusBreaks,
         autopsies: this.autopsyCache,
       });
+      // Mark as saved so subsequent re-renders in the same view do not duplicate
+      this.currentOptions.isNewSubmission = false;
     }
 
     const container = document.getElementById('analytics-screen');

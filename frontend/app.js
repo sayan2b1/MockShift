@@ -1605,11 +1605,14 @@ class MockShiftCBT {
 
     // Hand over to Post-Test Analytics engine
     if (window.MockShiftAnalytics) {
+      const cleanTitle = (this.examPaper?.exam_title || 'Mock').replace(/[^a-zA-Z0-9]/g, '_');
+      const attemptId = `att_${cleanTitle}_${Date.now()}`;
       window.MockShiftAnalytics.evaluateAndRender(
         this.examPaper,
         this.userAnswers,
         this.timeSpentByQuestion,
-        this.focusBreaks
+        this.focusBreaks,
+        { isNewSubmission: true, attemptId: attemptId }
       );
     }
   }

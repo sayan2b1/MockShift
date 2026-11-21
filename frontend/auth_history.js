@@ -232,7 +232,35 @@ class MockShiftAuthManager {
   getPastRecords() {
     try {
       const data = localStorage.getItem(this.getHistoryStorageKey());
-      return data ? JSON.parse(data) : [];
+      if (!data) return [];
+      const parsed = JSON.parse(data);
+      if (!Array.isArray(parsed)) return [];
+
+      // Automatically deduplicate any duplicate attempts (same examTitle, score, attempted within 5 minutes)
+      const cleaned = [];
+      for (const rec of parsed) {
+        if (!rec) continue;
+        const isDuplicate = cleaned.some(existing => {
+          if (existing.id === rec.id) return true;
+          if (existing.examTitle === rec.examTitle &&
+              Number(existing.totalScore) === Number(rec.totalScore) &&
+              Number(existing.totalAttempted) === Number(rec.totalAttempted)) {
+            const timeA = new Date(existing.submittedAt || existing.date || 0).getTime();
+            const timeB = new Date(rec.submittedAt || rec.date || 0).getTime();
+            return Math.abs(timeA - timeB) < 5 * 60 * 1000;
+          }
+          return false;
+        });
+
+        if (!isDuplicate) {
+          cleaned.push(rec);
+        }
+      }
+
+      if (cleaned.length !== parsed.length) {
+        localStorage.setItem(this.getHistoryStorageKey(), JSON.stringify(cleaned));
+      }
+      return cleaned;
     } catch (e) {
       console.warn("Error reading past records:", e);
       return [];
@@ -267,6 +295,30 @@ class MockShiftAuthManager {
         timeSpent: attemptData.timeSpent,
         focusBreaks: attemptData.focusBreaks || []
       };
+
+      // Check if this exact record ID already exists (update it in place)
+      const existingIdx = records.findIndex(r => r.id === recordId);
+      if (existingIdx !== -1) {
+        records[existingIdx] = { ...records[existingIdx], ...newRecord };
+        localStorage.setItem(this.getHistoryStorageKey(), JSON.stringify(records));
+        this.updateRecordCountBadge();
+        return records[existingIdx];
+      }
+
+      // De-duplicate: If an identical attempt was already saved within the last 5 minutes, do not add duplicate
+      const isDuplicate = records.some(r => {
+        if (r.examTitle !== examTitle) return false;
+        if (Number(r.totalScore) !== Number(attemptData.totalScore)) return false;
+        if (Number(r.totalAttempted) !== Number(attemptData.totalAttempted)) return false;
+        const timeA = new Date(submittedAt).getTime();
+        const timeB = new Date(r.submittedAt || r.date || 0).getTime();
+        return Math.abs(timeA - timeB) < 5 * 60 * 1000;
+      });
+
+      if (isDuplicate) {
+        console.warn("Ignoring duplicate exam attempt submission.");
+        return null;
+      }
 
       // Keep up to 100 most recent records per account
       records.unshift(newRecord);
@@ -523,9 +575,12 @@ class MockShiftAuthManager {
             </div>
           </div>
 
-          <div class="record-actions">
+          <div class="record-actions" style="display: flex; gap: 0.5rem; justify-content: space-between; align-items: center;">
             <button class="btn btn-secondary btn-sm" onclick="window.MockShiftAuth.inspectRecord('${rec.id}')">
               <i class="fas fa-chart-pie"></i> View Analytics & Autopsy
+            </button>
+            <button class="btn btn-sm" style="color: #ef4444; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 6px; padding: 0.3rem 0.6rem;" onclick="window.MockShiftAuth.deleteRecord('${rec.id}', event)" title="Delete this record">
+              <i class="fas fa-trash-alt"></i>
             </button>
           </div>
         </div>
@@ -549,8 +604,29 @@ class MockShiftAuthManager {
         target.examData,
         target.userAnswers,
         target.timeSpent,
-        target.focusBreaks
+        target.focusBreaks,
+        { isNewSubmission: false, isInspection: true, recordId: target.id }
       );
+    }
+  }
+
+  deleteRecord(recordId, event) {
+    if (event) event.stopPropagation();
+    if (!confirm("Are you sure you want to delete this exam attempt record?")) return;
+    try {
+      let records = this.getPastRecords();
+      records = records.filter(r => r.id !== recordId);
+      localStorage.setItem(this.getHistoryStorageKey(), JSON.stringify(records));
+      this.updateRecordCountBadge();
+      this.renderPastRecordsList();
+      if (!this.isGuest()) {
+        setTimeout(() => this.syncStudentHistoryWithDrive(true), 300);
+      }
+      if (window.MockShiftApp && window.MockShiftApp.showToast) {
+        window.MockShiftApp.showToast("Exam record deleted.", "info");
+      }
+    } catch (e) {
+      console.error("Error deleting record:", e);
     }
   }
 
