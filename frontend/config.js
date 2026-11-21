@@ -22,7 +22,7 @@ const MockShiftConfig = {
   COMBINED_DRIVE_SCOPES: "https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.appdata",
   HISTORY_SYNC_FILENAME: "mockshift_history.json",
   DRIVE_FOLDER_NAME: "MockShift Papers",
-  FREE_UPLOADS_PER_WEEK: 3,
+  FREE_UPLOADS_PER_WEEK: 100,
   PRO_PRICING: {
     monthly: "₹99",
     yearly: "₹499"

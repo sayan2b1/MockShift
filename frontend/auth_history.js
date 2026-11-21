@@ -891,7 +891,7 @@ class MockShiftAuthManager {
       localStorage.setItem(key, JSON.stringify(recentUploads));
     }
 
-    const limit = MockShiftConfig.FREE_UPLOADS_PER_WEEK || 3;
+    const limit = MockShiftConfig.FREE_UPLOADS_PER_WEEK || 100;
     const used = recentUploads.length;
     const remaining = Math.max(0, limit - used);
 
