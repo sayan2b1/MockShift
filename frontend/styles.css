@@ -108,6 +108,21 @@ body.light-mode .app-header {
   letter-spacing: -0.5px;
 }
 
+.brand-logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0, 245, 212, 0.45));
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.brand-logo-img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 16px rgba(0, 245, 212, 0.75));
+}
+
 .brand-badge {
   font-size: 0.7rem;
   font-weight: 700;

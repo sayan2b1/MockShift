@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="frontend/favicon.svg" width="90" height="90" alt="MockShift Logo" />
+</p>
+
 # MockShift (SimulCast AI) — Bring Your Own Paper (BYOP) CBT Exam Simulator
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-mockshift.onrender.com-success?style=for-the-badge&logo=render&logoColor=white)](https://mockshift.onrender.com)
