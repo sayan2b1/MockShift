@@ -120,7 +120,7 @@ uvicorn main:app --reload --port 8000
 ### 3. Open in Browser
 Visit **`http://localhost:8000`** in your browser!
 
-- Click **"12Q Benchmark Demo"** or **"Full 68Q CAT Mock Paper"** to instantly test with 0 API calls.
+- Click **"12Q Benchmark Demo"** to instantly test with 0 API calls.
 - Click **"Import Shared Paper (.json)"** to load any exported exam paper with 0 API calls.
 - Upload any PDF question paper to parse with Gemini.
 - Review questions in the **Pre-Exam Quick Editor** with live KaTeX math preview.

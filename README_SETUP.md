@@ -105,7 +105,7 @@ http://127.0.0.1:8000
 
 | Feature | How to Test | Expected Behavior |
 | :--- | :--- | :--- |
-| **0 API Call Demo Tests** | Click "12Q Benchmark Demo" or "Full 68Q CAT Mock Paper" on Upload screen | Instantly opens Pre-Exam Quick Editor with live KaTeX rendering without using any API tokens. |
+| **0 API Call Demo Tests** | Click "12Q Benchmark Demo" on Upload screen | Instantly opens Pre-Exam Quick Editor with live KaTeX rendering without using any API tokens. |
 | **Local PyMuPDF Extraction** | Drag and drop a text-based question paper PDF | Local fitz inspects clean selectable text and sends extracted text directly, avoiding vision tokens. |
 | **Google Drive Upload** | Select "Google Drive Upload" tab and choose a PDF | Requests `drive.file` OAuth consent, creates `MockShift Papers` folder in user's Drive, uploads file, and passes it to parser. |
 | **Google Sign-In** | Click User pill > "Sign In with Google" | Authenticates via Google Identity Services and switches active history to `mockshift_history_<sub_id>`. |
