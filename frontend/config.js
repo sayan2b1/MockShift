@@ -24,7 +24,7 @@ const MockShiftConfig = {
   DRIVE_FOLDER_NAME: "MockShift Papers",
   FREE_UPLOADS_PER_WEEK: 3,
   PRO_PRICING: {
-    monthly: "₹199",
+    monthly: "₹99",
     yearly: "₹499"
   },
   STORAGE_KEYS: {

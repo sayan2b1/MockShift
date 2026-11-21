@@ -1102,7 +1102,7 @@ class MockShiftAuthManager {
 
   handleSubscribeClick(plan = "yearly") {
     // Direct payment link or WhatsApp/UPI checkout prompt
-    const price = plan === "monthly" ? "₹199/month" : "₹499/year";
+    const price = plan === "monthly" ? "₹99/month" : "₹499/year";
     const promptMsg = 
       `MockShift Pro (${price})\n\n` +
       `To complete your upgrade:\n` +
